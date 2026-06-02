@@ -3,23 +3,59 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-
 const title = "Our Projects | Surface Restoration Before & After";
 const description = "Explore our completed repair projects for floors, furniture, benchtops, stone, tiles, walls, doors, leather, and more. See how we restore damaged surfaces to flawless condition.";
-
-// 获取所有案例
-const projects = await getCollection('projects'); 
+const projects = await getCollection('projects');
 ---
-
 <BaseLayout {title} {description}>
     <Header />
 
-    <section class="project-page">
+    <section class="page-header">
+        <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-floor-repair.jpg);"></div>
+        <div class="container">
+            <h1 class="page-header__title">Completed Repair Projects</h1>
+            <div class="wallox-breadcrumb">
+                <ul class="wallox-breadcrumb__list list-unstyled">
+                    <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                    <li><span>Projects</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section style="padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 style="margin-bottom: 20px;">Real Repairs, Real Results</h2>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px;">
+                        Every project on this page is a real job completed on-site across Sydney.
+                        No studio setups, no stock photography — just before-and-after documentation
+                        of actual damage we were asked to make disappear.
+                    </p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px;">
+                        Our work covers timber and laminate floors, stone and laminate benchtops,
+                        carpet, tiles, walls, doors, furniture, leather, and fibreglass surfaces.
+                        Projects range from single-item rental bond repairs completed in under two hours,
+                        to multi-surface restorations for homeowners preparing a property for sale.
+                    </p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">
+                        If you have damage that looks similar to anything shown here,
+                        text a photo to <strong>0452 288 855</strong> for a same-day quote.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Cards -->
+    <section class="project-page" style="padding: 40px 0 60px;">
         <div class="container">
             <div class="row gutter-y-20 gutter-x-20">
                 {projects.map(project => (
                     <div class="col-lg-4 col-md-6">
-                        <div class="project-card wow fadeInUp" data-wow-duration='00ms' data-wow-delay='00ms'>
+                        <div class="project-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
                             <div class="project-card__thumb">
                                 <img src={project.data.listImage} alt={project.data.pageTitle}>
                             </div>
@@ -28,10 +64,14 @@ const projects = await getCollection('projects');
                                     <span class="project-card__content__subtitle">
                                         {project.data.categories && project.data.categories[0] ? project.data.categories[0] : 'Restoration'}
                                     </span>
-                                    
                                     <h4 class="project-card__content__title">
                                         <a href={`/projects/${project.slug}/`}>{project.data.pageTitle}</a>
                                     </h4>
+                                    {project.data.description && (
+                                        <p class="project-card__content__text" style="font-size: 0.88rem; line-height: 1.6; margin-top: 8px; color: #666;">
+                                            {project.data.description}
+                                        </p>
+                                    )}
                                 </div>
                                 <a href={`/projects/${project.slug}/`} class="project-card__content__link">
                                     <i class="icon-up-right-arrow"></i>
@@ -43,5 +83,23 @@ const projects = await getCollection('projects');
             </div>
         </div>
     </section>
+
+    <!-- Closing CTA -->
+    <section style="padding: 50px 0 60px; background: #f9f9f9;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h3 style="margin-bottom: 16px;">Have Similar Damage?</h3>
+                    <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 24px; color: #555;">
+                        Most surface damage — chips, scratches, burns, stains, holes — can be repaired
+                        on-site in a single visit without replacing the whole floor, benchtop, or fitting.
+                        Send us a photo and we will tell you honestly whether repair is the right option.
+                    </p>
+                    <a href="/contact/" class="thm-btn">Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <Footer />
 </BaseLayout>

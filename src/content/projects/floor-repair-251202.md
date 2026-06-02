@@ -53,3 +53,9 @@ restorationProcess:
 seoTitle: "Timber Floor Moisture Stain Repair Sydney | Seamless Property Sale Prep"
 seoDescription: "Expert repair for timber floor moisture and mould stains caused by plant pots. Guaranteed invisible restoration for homeowners preparing to sell their Sydney property."
 ---
+
+The homeowner had lived with the stain for months before deciding to sell. At first they assumed it would be something a cleaner could handle. It wasn't — the moisture from the plant pot had sat long enough to drive mould deep into the timber fibres, leaving a dark circular mark about thirty centimetres across that no surface product could touch.
+
+With the property listed and the first open home two weeks away, there was no time for sanding and refinishing the entire floor. That process would have meant moving all furniture, waiting for coats to cure, and living out of the house for several days. We were asked whether a localised repair was possible. It was.
+
+The trickiest part of this job was the floor's age. The surrounding boards had developed a warm amber tone that a fresh stain would never replicate straight from a tin. We built the colour in stages, glazing over several passes until the repaired area matched the patina of the rest of the floor. The homeowner confirmed the stain was undetectable during every subsequent inspection and the property sold without the issue being raised.

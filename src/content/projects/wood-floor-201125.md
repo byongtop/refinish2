@@ -57,21 +57,10 @@ seoTitle: "Timber Floor Repair Sydney | Fix Scratches & Dents | Refinish"
 seoDescription: "Searching for timber floor repair in Sydney? We specialize in invisible repairs for discontinued timber, engineered wood, and laminate. Save up to 80% vs replacement."
 ---
 
-## Case Study: Expert Timber Floor Repair in Sydney
+The real estate agent who referred this job told us upfront that the owner had already called two flooring companies. Both had said the same thing: the product was discontinued, no matching boards existed, and the only option was a full floor replacement. The quote they received was just under six thousand dollars.
 
-In the heart of Sydney, maintaining the pristine condition of wooden flooring is essential for property value. This project highlights our expertise in **[timber floor repair](https://refinish.com.au/service-floor-repair/)** for a luxury apartment where replacement was not an option.
+The damage itself was at the bedroom entrance — two large discoloured patches where moisture had sat under a rug for an extended period, plus a cluster of surface scratches near the wardrobe. Not dramatic damage, but in a luxury Eastern Suburbs apartment with engineered timber throughout, it was impossible to ignore.
 
-### Why Timber Floor Repair is Better Than Replacement
-Many homeowners believe that once a floor is scratched or discoloured, the only solution is to replace the boards. However, for discontinued lines, this is a major problem. Our **[timber floor repair Sydney](https://refinish.com.au/service-floor-repair/)** service bridges this gap. By using advanced resins and pigments, we provide an **invisible timber floor repair** that looks as good as new.
+The challenge with aged engineered timber is that the colour is never what it says on the original specification sheet. This floor had been down for several years and had shifted to a warmer, slightly amber tone that no product off a shelf would match. We mixed the base colour on-site, then adjusted it three times under the apartment's natural light before committing to the repair. The grain lines were hand-drawn with a fine brush — the kind of detail that takes time but is the difference between a repair that holds up under inspection and one that gets flagged.
 
-### Invisible Timber Floor Mending: The Technique
-Our technical approach to **[timber floor scratch repair](https://refinish.com.au/timber-floor-scratch-repair-sydney/)** involves recreating the natural 'DNA' of the wood. We carefully study the grain of your Sydney home's flooring and use precision brushes to hand-draw the texture. This ensures that the light reflects off the repaired area exactly the same way it does off the original timber.
-
-### Cost-Effective Timber Floor Restoration
-Why spend $5,000 on a full sand and polish when you can spend a fraction of that on a targeted **[timber floor repair](https://refinish.com.au/service-floor-repair/)**? We help Sydney landlords and homeowners pass bond inspections and prepare properties for sale with our fast-turnaround service.
-
-* **Service Area:** All Greater Sydney suburbs (Eastern Suburbs, North Shore, Inner West).
-* **Compatibility:** Solid timber, engineered wood, hybrid, and laminate.
-* **Results:** 100% seamless and durable.
-
-[Get a Free Quote for Timber Floor Repair Sydney](https://refinish.com.au/contact/)
+The full job took just under three hours. The agent walked through afterwards and spent several minutes trying to locate the repaired area. She couldn't find it without being shown exactly where to look. The owner avoided the replacement cost entirely, and the property was ready for the incoming tenant the same day.

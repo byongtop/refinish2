@@ -6,13 +6,12 @@ import WhyChooseOne from '../components/why-choose-one.astro';
 
 
 const title = "Professional Surface Repair & Restoration Services | Refinish";
-const description = "Expert repair and restoration for wood floors, benchtops, stone, tiles, furniture, and more. Fast, seamless, and cost-effective solutions for commercial and residential surfaces.";
+const description = "Expert repair and restoration for wood floors, benchtops, stone, tiles, furniture, leather, fiberglass and more. Fast, seamless, and cost-effective solutions for homes and rentals across Sydney.";
 ---
 
 <BaseLayout {title} {description}>
 
     <Header />
-
 
         <section class="page-header">
             <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-floor-repair.jpg);"></div>
@@ -21,15 +20,44 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                 <div class="wallox-breadcrumb">
                     <ul class="wallox-breadcrumb__list list-unstyled">
                         <li><a href="/"><i class="icon-home"></i> Home</a></li>
-                        <li><span>our service</span></li>
+                        <li><span>Our Services</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="service-page">
+        <!-- Intro section -->
+        <section class="service-intro" style="padding: 60px 0 20px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 style="margin-bottom: 20px;">Surface Repair Specialists Across Sydney</h2>
+                        <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px;">
+                            At Refinish, we specialise in localised, invisible repairs for a wide range of
+                            interior and exterior surfaces. Rather than replacing damaged materials entirely,
+                            our technicians restore the affected area on-site — matching colour, texture, and
+                            finish so the repair disappears into the surrounding surface.
+                        </p>
+                        <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px;">
+                            We work across residential homes, rental properties, and commercial spaces throughout
+                            Sydney. Whether you are a tenant preparing for a bond inspection, a landlord managing
+                            a property changeover, or a homeowner with a damaged benchtop or floor, we have a
+                            repair solution that saves you the cost of full replacement.
+                        </p>
+                        <p style="font-size: 1.05rem; line-height: 1.8;">
+                            All repairs are completed on-site in a single visit. No workshop drop-offs,
+                            no waiting weeks for parts, and no need to vacate the property.
+                            Text us a photo on <strong>0452 288 855</strong> for a same-day quote.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-page" style="padding: 40px 0 60px;">
             <div class="container">
                 <div class="row gutter-y-30">
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -44,11 +72,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-floor-repair/">Floor Repair</a></h2>
+                                    <p class="service-card__text">Scratches, dents, chips and water damage on timber, laminate, vinyl plank, and hybrid flooring — repaired on-site without board replacement.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -63,11 +93,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-carpet-repair/">Carpet Repair</a></h2>
+                                    <p class="service-card__text">Burns, holes, pet damage, frayed seams, and ripples fixed using invisible patching and re-tufting techniques. Bond inspection ready.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-blanket"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -82,11 +114,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-benchtop-repair/">Benchtop Repair</a></h2>
+                                    <p class="service-card__text">Chips, burns, and edge damage on laminate, stone, timber, and acrylic benchtops restored with colour-matched compounds. No removal required.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-interior-design-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -101,11 +135,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-stone-repair/">Stone Repair</a></h2>
+                                    <p class="service-card__text">Chips, cracks, and surface damage on marble, granite, Caesarstone, and engineered stone — invisibly repaired without slab replacement.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -120,11 +156,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-tile-repair/">Tile Repair</a></h2>
+                                    <p class="service-card__text">Chipped, cracked, and stained tiles in kitchens, bathrooms, and laundries restored using precision colour matching. Avoids full retiling.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -139,11 +177,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-furniture-repair/">Furniture Repair</a></h2>
+                                    <p class="service-card__text">Scratches, dents, water marks, and lacquer damage on timber, veneer, and painted furniture restored on-site. Suitable for antique and high-end pieces.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-paint-roller"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -158,11 +198,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-wall-repair/">Wall Repair</a></h2>
+                                    <p class="service-card__text">Holes, cracks, and scuffs in plaster and gyprock walls repaired with on-site colour matching — no need to repaint the entire room.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -177,11 +219,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-door-repair/">Door Repair</a></h2>
+                                    <p class="service-card__text">Dents, holes, scratches, and pet damage on timber and hollow-core doors repaired invisibly. Faster and cheaper than door replacement.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -195,12 +239,14 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             </div>
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
-                                    <h2 class="service-card__title"><a href="/service-skirtingboard-repair/">Skirtingboard</a></h2>
+                                    <h2 class="service-card__title"><a href="/service-skirtingboard-repair/">Skirtingboard Repair</a></h2>
+                                    <p class="service-card__text">Scuffs, chips, and impact marks on skirting boards colour-matched and restored without repainting surrounding walls or replacing entire lengths.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -215,11 +261,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-leather-repair/">Leather Repair</a></h2>
+                                    <p class="service-card__text">Cuts, scuffs, peeling, and colour loss on leather and faux leather sofas, chairs, and car interiors repaired and re-dyed on-site.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -234,11 +282,13 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-fiberglass-repair/">Fiberglass Repair</a></h2>
+                                    <p class="service-card__text">Cracks, gouges, and surface damage on fibreglass panels, bathtubs, caravans, and boat hulls structurally restored and colour-matched.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-wallpaper-1"></i></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="service-card__image">
@@ -253,12 +303,132 @@ const description = "Expert repair and restoration for wood floors, benchtops, s
                             <div class="service-card__content">
                                 <div class="service-card__title__box">
                                     <h2 class="service-card__title"><a href="/service-plastic-repair/">Plastic Repair</a></h2>
+                                    <p class="service-card__text">Cracks, chips, and discolouration on PVC, ABS, and acrylic surfaces — including window frames, appliance panels, and vehicle trim — repaired on-site.</p>
                                 </div>
                                 <div class="service-card__icon"><i class="icon-park"></i></div>
                             </div>
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ section -->
+        <section class="faq-section" style="padding: 60px 0; background: #f9f9f9;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 style="margin-bottom: 10px; text-align: center;">Common Questions About Our Repair Services</h2>
+                        <p style="text-align: center; color: #666; margin-bottom: 40px;">
+                            Not sure if your damage can be repaired? Here are the questions we hear most often.
+                        </p>
+
+                        <div class="faq-page__accordion wallox-accrodion" data-grp-name="wallox-accrodion-services">
+
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text">
+                                        <span class="accrodion-title__icon"></span>
+                                        How do I know if my damage can be repaired rather than replaced?
+                                    </h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">
+                                            The easiest way is to text us a photo on <strong>0452 288 855</strong>.
+                                            As a general guide, localised damage — a chip, a scratch, a burn, a dent,
+                                            or a small hole — is almost always repairable on-site. Damage is usually
+                                            not repairable when the structural integrity of the material is compromised
+                                            (such as a fully shattered tile, a water-damaged subfloor, or a door that
+                                            has split through its core). In those cases we will tell you honestly rather
+                                            than attempt a repair that will not last.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text">
+                                        <span class="accrodion-title__icon"></span>
+                                        Do you carry all materials on-site, or do I need to source anything?
+                                    </h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">
+                                            You do not need to source or supply anything. Our technicians arrive with
+                                            a full range of repair compounds, tinting pigments, and finishing materials
+                                            for every surface type we work on. Colour matching is done on-site by eye
+                                            and by mixing — we do not rely on factory codes, which often do not account
+                                            for how a surface has aged. In most cases, a single visit is all that is needed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text">
+                                        <span class="accrodion-title__icon"></span>
+                                        Can you repair multiple surfaces in one visit?
+                                    </h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">
+                                            Yes. This is very common, particularly for rental property changeovers
+                                            where there may be a carpet burn, a wall hole, a chipped benchtop, and
+                                            a scratched door all needing attention before the next tenant moves in.
+                                            We quote each item separately so you know exactly what each repair costs,
+                                            and we schedule the visit to complete everything in one call-out.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text">
+                                        <span class="accrodion-title__icon"></span>
+                                        Do you work on weekends or at short notice?
+                                    </h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">
+                                            We understand that repair needs are often time-sensitive — a vacate
+                                            deadline, a pre-sale inspection, or a guest arriving. We do our best
+                                            to accommodate urgent bookings and can often schedule within 24–48 hours.
+                                            Contact us directly on <strong>0452 288 855</strong> to check
+                                            availability for your timeframe.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text">
+                                        <span class="accrodion-title__icon"></span>
+                                        What areas of Sydney do you service?
+                                    </h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">
+                                            We cover greater Sydney including the CBD, Eastern Suburbs, Inner West,
+                                            North Shore, Northern Beaches, Hills District, Parramatta, and surrounding
+                                            areas. If you are unsure whether we cover your suburb, get in touch and
+                                            we will confirm.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

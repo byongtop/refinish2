@@ -59,3 +59,9 @@ restorationProcess:
 seoTitle: "Tile Crack Repair Sydney: Structural Solution for Skirting Expansion Damage"
 seoDescription: "A cracked floor tile was restored in just a few hours with precision colour matching, and the underlying skirting expansion issue was corrected to prevent future damage."
 ---
+
+The real estate agent sent us photos before even asking if it was fixable — she assumed it probably wasn't. The crack ran cleanly across the tile face and extended into the grout line, and she had already confirmed with two tile suppliers that the product was discontinued and no match was available.
+
+What made this case more interesting than a straightforward chip repair was the cause. The skirting board had been installed hard against the tile with no expansion gap. During warmer months, the board expanded, applied lateral pressure, and the tile eventually gave way. Filling the crack without addressing that underlying pressure would have meant the repair failing within a season.
+
+We repaired the tile surface first, then trimmed a narrow section from the base of the skirting board to introduce a proper expansion gap, and finished with a flexible sealant at the joint. The agent signed off on the result the same afternoon. It was the kind of job where the structural fix was almost more important than the cosmetic one — the visible crack was the symptom, not the problem.

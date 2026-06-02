@@ -58,3 +58,10 @@ restorationProcess:
 seoTitle: "How to Fix a Burnt Benchtop Sydney | On-Site Scorch Mark Repair"
 seoDescription: "Can you fix a burnt kitchen benchtop? Yes! Surface Refinish provides expert on-site heat damage restoration in Sydney. Invisible results for laminate and stone benchtops. Save thousands on replacement."
 ---
+
+The tenant called us the morning after the accident, still hoping the scorch mark might somehow clean off. It couldn't. The heat had physically altered the laminate resin, leaving a rough, carbonised patch roughly the size of a saucepan base, right in the centre of the benchtop where it was impossible to miss.
+
+What made this job particularly demanding was the surface pattern — a fine stone-effect laminate with subtle veining that shifted direction across the board. Flat colour alone would never disguise a repair in the centre of that kind of pattern. Our technician spent the first thirty minutes simply studying the grain movement before mixing pigments.
+
+Three hours after arrival, the scorch mark was gone. The tenant photographed the finished result from multiple angles under the kitchen downlights — the repair held up to all of them. She saved the cost of full benchtop replacement, which in this case would have meant removing the sink and disconnecting the plumbing. For a tenant, that was simply not a realistic option. Repair was.
+
