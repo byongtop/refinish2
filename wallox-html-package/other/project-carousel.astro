@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectListItem from '../../components/ProjectListItem.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+// 1. 获取所有项目
+const allProjects = await getCollection('projects');
+
+// 2. (可选) 对项目进行排序，例如按日期降序排列
+const sortedProjects = allProjects.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+// 3. **关键步骤：使用 .slice() 只保留前 5 个项目**
+const top5Projects = sortedProjects.slice(0, 5);
+
+const title = "Our Full Portfolio of Surface Restoration Projects";
+const description = "Explore our work on invisible repairs for timber, stone, benchtops, walls, and carpets across Sydney and Australia.";
+---
+        <!-- Project section start -->
+        <section class="project-page">
+            <div class="container">
+                <div class="project-page__item__carousel wallox-owl__carousel wallox-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+            "items": 1,
+            "margin": 30,
+            "loop": false,
+            "smartSpeed": 700,
+            "nav": true,
+            "navText": ["<span class=\"icon-angle-right\"></span>","<span class=\"icon-angle-left\"></span>"],
+            "dots": true,
+            "autoplay": false,
+            "responsive": {
+                "0": {
+                    "items": 1
+                },
+                "768": {
+                    "items": 2
+                },
+                "992": {
+                    "items": 3
+                }
+            }
+        }'>
+
+                    {top5Projects.map((project) => (
+                    <div class="item">
+
+                        <div class="project-card wow fadeInUp" data-wow-duration='00ms' data-wow-delay='00ms'>
+                            <div class="project-card__thumb">
+                                <img src={project.data.listImage} alt={project.data.title}>
+                            </div>
+                            <div class="project-card__content">
+                                <div class="project-card__content__inner">
+                                    <span class="project-card__content__subtitle">interior</span>
+                                    <h4 class="project-card__content__title"><a href={`/projects/${project.slug}`}">{project.data.title}</a></h4>
+                                </div>
+                                <a href={`/projects/${project.slug}`} class="project-card__content__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    ))}
+
+                </div>
+            </div>
+<script is:inline>
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = $('.project-page__item__carousel');
+  if (carousel.length) {
+    carousel.owlCarousel({
+      items: 1,
+      margin: 0,
+      loop: true,
+      smartSpeed: 700,
+      nav: true,
+      navText: [
+        "<span class='icon-angle-right'></span>",
+        "<span class='icon-angle-left'></span>"
+      ],
+      dots: false,
+      autoplay: false,
+            "responsive": {
+                "0": {
+                    "items": 1
+                },
+                "768": {
+                    "items": 2
+                },
+                "992": {
+                    "items": 3
+                }
+            }
+    });
+
+    // 自定义左右按钮
+    $('.service-one__carousel__nav--left').click(() => carousel.trigger('prev.owl.carousel'));
+    $('.service-one__carousel__nav--right').click(() => carousel.trigger('next.owl.carousel'));
+  }
+});
+</script>
+        </section>
+        <!-- Project section End -->
+
+

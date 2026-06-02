@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Quote from '../components/quote-request.astro';
+
+const title = "Contact Us for a Free Quote | Surface Repair Sydney & Australia";
+const description = "Need a surface repaired in Sydney or Australia? Contact our team today for fast, professional quotes on wood, stone, furniture, and tile restoration projects.";
+
+---
+
+<BaseLayout {title} {description}>
+
+    <Header />
+
+    <section class="page-header">
+        <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+        <div class="container">
+            <h1 class="page-header__title">Get a Free, No-Obligation Surface Repair Quote</h1>
+            <div class="wallox-breadcrumb">
+                <ul class="wallox-breadcrumb__list list-unstyled">
+                    <li><a href="index/"><i class="icon-home"></i> Home</a></li>
+                    <li><span>Contact</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<section class="contact-one">
+    <div class="container">
+        <div class="row gutter-y-30">
+            
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="contact-one__item">
+                    <div class="contact-one__item__icon">
+                        <i class="icon-maps-and-flags"></i>
+                    </div>
+                    <div class="contact-one__item__content">
+                        <h5 class="contact-one__item__title">Service Area</h5>
+                        <p class="contact-one__item__text">Greater Sydney Area</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="contact-one__item">
+                    <div class="contact-one__item__icon">
+                        <i class="icon-telephone"></i>
+                    </div>
+                    <div class="contact-one__item__content">
+                        <h5 class="contact-one__item__title">Quick Contact</h5>
+                        <a href="tel:0452288855" class="contact-one__item__call">0452 288 855</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="contact-one__item">
+                    <div class="contact-one__item__icon">
+                        <i class="icon-message"></i>
+                    </div>
+                    <div class="contact-one__item__content">
+                        <h5 class="contact-one__item__title">Support Email</h5>
+                        <a href="mailto:info@refinish.com.au" class="contact-one__item__call">info@refinish.com.au</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <Quote />
+
+        <div class="contact-map">
+            <div class="google-map google-map__contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424146.70724797266!2d150.60233760150274!3d-33.847234939856826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2z5paw5Y2X5aiB5bCU5aOr5bee5oKJ5bC8!5e0!3m2!1szh-CN!2sau!4v1764032348352!5m2!1szh-CN!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- /.google-map -->
+        </div>
+    <Footer />
+
+</BaseLayout>
+

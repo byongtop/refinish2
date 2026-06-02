@@ -1,0 +1,128 @@
+        <div class="testimonials-contact testimonials-contact--home">
+            <div class="testimonials-contact__bg" style="background-image: url(/assets/images/backgrounds/team-bg.png);"></div>
+            <div class="container">
+                <div class="row gutter-y-30 align-items-center g-0">
+                    <div class="col-lg-12">
+                        <div class="testimonials-contact__right wow fadeInRight" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="sec-title text-start">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <img class="sec-title__image" src="/assets/images/shapes/sec-title-s-1.png" alt="Decorative icon for testimonials">
+                                    <h6 class="sec-title__tagline bw-split-in-right">Trusted Surface Repair</h6>
+                                </div>
+                                <h3 class="sec-title__title bw-split-in-up">What Our Clients Say About Our Repairs</h3>
+                            </div>
+
+                            <div class="testimonials-contact__carousel testimonials-contact__carousel--two wallox-owl__carousel owl-carousel owl-theme" data-owl-options='{}'>
+                                <div class="item">
+                                    <div class="testimonials-contact__item">
+                                        <div class="testimonials-contact__top">
+                                            <div class="testimonials-contact__author">
+                                                <div class="testimonials-contact__author__image">
+                                                    <img src="/assets/images/resources/testi-1-1.jpg" alt="Photo of Mark Robertson, a satisfied customer">
+                                                </div>
+                                                <div class="testimonials-contact__author__content">
+                                                    <h5 class="testimonials-contact__author__name">Mark Robertson</h5>
+                                                    <span class="testimonials-contact__author__deg">Builder</span>
+                                                    <div class="testimonials-contact__author__star">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonials-contact__author__quite">
+                                                    <i class="icon-quite2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="testimonials-contact__item__text">“ We had several benchtops and stone surfaces damaged on a project site. Their precise repairs saved us replacement costs and kept the project on schedule. ”</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonials-contact__item">
+                                        <div class="testimonials-contact__top">
+                                            <div class="testimonials-contact__author">
+                                                <div class="testimonials-contact__author__image">
+                                                    <img src="/assets/images/resources/testi-1-1.jpg" alt="Photo of Priya Singh, a satisfied customer">
+                                                </div>
+                                                <div class="testimonials-contact__author__content">
+                                                    <h5 class="testimonials-contact__author__name">Priya Singh</h5>
+                                                    <span class="testimonials-contact__author__deg">Tenant</span>
+                                                    <div class="testimonials-contact__author__star">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonials-contact__author__quite">
+                                                    <i class="icon-quite2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="testimonials-contact__item__text">“ The walls and skirting boards in my rental apartment were repaired perfectly. You can’t even tell where the damage was—fast, professional, and affordable! ”</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonials-contact__item">
+                                        <div class="testimonials-contact__top">
+                                            <div class="testimonials-contact__author">
+                                                <div class="testimonials-contact__author__image">
+                                                    <img src="/assets/images/resources/testi-1-1.jpg" alt="Photo of Lily Chen, a satisfied customer">
+                                                </div>
+                                                <div class="testimonials-contact__author__content">
+                                                    <h5 class="testimonials-contact__author__name">Lily Chen</h5>
+                                                    <span class="testimonials-contact__author__deg">Homeowner</span>
+                                                    <div class="testimonials-contact__author__star">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonials-contact__author__quite">
+                                                    <i class="icon-quite2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="testimonials-contact__item__text">“ Our furniture and leather chairs had scratches and scuffs that I thought were permanent. The team restored them beautifully—truly impressive work! ”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script is:inline>
+document.addEventListener('DOMContentLoaded', () => {
+  const testimonialsCarousel = $('.testimonials-contact__carousel');
+  if (testimonialsCarousel.length) {
+    testimonialsCarousel.owlCarousel({
+      // 删掉固定的 items: 2
+      margin: 30,
+      loop: true,
+      smartSpeed: 700,
+      nav: true,
+      navText: [
+        "<span class='icon-angle-right'></span>",
+        "<span class='icon-angle-left'></span>"
+      ],
+      dots: false,
+      autoplay: false,
+      // 添加响应式断点设置
+      responsive: {
+        0: {
+          items: 1 // 手机端（0px以上）显示 1 列
+        },
+        768: {
+          items: 2 // 平板和电脑端（768px以上）显示 2 列
+        }
+      }
+    });
+  }
+});
+</script>

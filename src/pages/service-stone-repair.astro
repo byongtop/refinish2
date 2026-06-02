@@ -1,0 +1,226 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+// SEO 深度优化版
+const title = "Stone Benchtop Chip Repair Sydney | Marble & Caesarstone Crack Specialists";
+const description = "Best stone benchtop chip and crack repair in Sydney. We restore Marble, Caesarstone, Granite, and Quartz with invisible results. Mobile on-site service across all Sydney suburbs. Save thousands on replacement.";
+const keyword = "stone benchtop repair Sydney, Caesarstone chip repair, marble restoration Sydney, granite crack repair, engineered stone repair, kitchen benchtop fix, stone chip filler Sydney, stone polishing Sydney";
+---
+
+<BaseLayout {title} {description} {keyword}>
+    <script type="application/ld+json" slot="header">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you repair a chip on the edge of a Caesarstone or Quantum Quartz benchtop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, edge chips are our most common stone repair in Sydney. We use dental-grade UV resins that are custom-tinted on-site to match the exact base colour and fleck pattern of brands like Caesarstone, Quantum Quartz, and Essastone. We then rebuild the edge profile to be smooth and flush with the original surface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the stone repair food-safe and hygienic for kitchen use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. At Refinish, we use high-quality stone resins that become completely inert and non-toxic once UV-cured. This seals the chip or crack, preventing bacteria and moisture from accumulating, making your benchtop 100% hygienic for food preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you fix cracks or etching on natural marble and granite?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. For natural stone like marble, we can treat 'etching' (dull spots caused by acid) and stabilize hairline cracks. Our process includes precision filling and diamond-pad polishing to restore the stone's original factory sheen, whether it is a high-gloss or honed finish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a stone chip repair take, and is there a warranty?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical stone chip repair in Sydney takes between 1 to 2 hours. Because we use instant UV-curing technology, the surface is ready for use immediately after we finish. We provide a 12-month workmanship warranty on all our stone restorations for your peace of mind."
+          }
+        }
+      ]
+    }
+    </script>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-service-stone-repair.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Stone Benchtop Chip Repair & Crack Restoration Sydney</h1>
+                <p style="color: white; font-size: 1.2rem;">Professional Invisible Repairs for Caesarstone, Marble, and Engineered Stone</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Stone Repair Sydney</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<section class="service-details">
+    <div class="container">
+        <div class="row gutter-y-30">
+            <ServiceDetailLeft activeHref="/service-stone-repair/" /> 
+
+            <div class="col-md-12 col-lg-8">
+                <div class="service-details__content">
+
+                    <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                        <img src="/assets/images/service/service-detail-stone-repair.jpg" alt="Professional Stone Benchtop Repair Sydney - Marble and Caesarstone">
+                    </div>
+                    
+                    <h2 class="service-details__title wow fadeInUp">Expert Stone Benchtop Restoration in Greater Sydney</h2>
+                    <p class="service-details__text wow fadeInUp">
+                        A chipped or cracked benchtop doesn't just look unsightly—it can also be a hygiene risk where bacteria can grow. At <strong>Refinish</strong>, we provide a premium <strong>mobile stone repair service across Sydney</strong>. Using advanced UV-cured resins and handcrafted pigments, we can restore your kitchen or bathroom benchtop to its original glory in just a few hours.
+                    </p>
+                    
+                    <p class="service-details__text wow fadeInUp">
+                        Our technicians are specialists in working with all major stone brands found in Sydney homes, including <strong>Caesarstone, Quantum Quartz, Essastone, and Silestone</strong>, as well as natural materials like <strong>Marble and Granite</strong>. We don't just "fill" a chip; we recreate the pattern and texture for a truly invisible result.
+                    </p>
+
+                    <h2 class="service-details__title wow fadeInUp">Common Stone Issues We Resolve</h2>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><strong>Edge Chips:</strong> Caused by impacts from heavy pots or pans. We rebuild the edge profile perfectly.</li>
+                                <li><strong>Hairline Cracks:</strong> Often found around sinks or stovetops due to thermal shock or stress.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><strong>Surface Scratches:</strong> We buff out light scratches to restore the stone's factory sheen.</li>
+                                <li><strong>Dull Spots:</strong> Removing "etching" caused by acidic liquids like lemon juice or vinegar on marble.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h2 class="service-details__title wow fadeInUp">Our Advanced 4-Step Stone Repair Process</h2>
+                    <p class="service-details__text">Our Sydney team uses a specialized technique that outperforms standard DIY fillers:</p>
+                    <ol class="service-details__text">
+                        <li><strong>Colour Matching:</strong> We don't use "off-the-shelf" colors. We custom-mix pigments on-site to match the unique grain and flecks of your specific stone.</li>
+                        <li><strong>UV Resin Application:</strong> We apply high-grade dental-strength resins that are cured instantly with UV light, ensuring the repair is as hard as the stone itself.</li>
+                        <li><strong>Structural Levelling:</strong> The repair is carefully shaved and levelled to be perfectly flush with the rest of the benchtop.</li>
+                        <li><strong>Precision Polishing:</strong> We use a series of diamond polishing pads to match the exact sheen level, from high-gloss to matte finishes.</li>
+                    </ol>
+
+                    <hr>
+
+                    <h2 class="service-details__title wow fadeInUp">Why Choose Our Sydney Stone Experts?</h2>
+                    <div class="service-details__feature">
+                        <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                            <div class="col-lg-6">
+                                <div class="service-details__left">
+                                    <ul class="service-details__list list-unstyled">
+                                        <li class="service-details__list__item">
+                                            <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                            <span class="service-details__list__text">Invisible results—nearly impossible to see.</span>
+                                        </li>
+                                        <li class="service-details__list__item">
+                                            <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                            <span class="service-details__list__text">Fully mobile service across all Sydney suburbs.</span>
+                                        </li>
+                                        <li class="service-details__list__item">
+                                            <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                            <span class="service-details__list__text">Food-safe and durable repair materials.</span>
+                                        </li>
+                                        <li class="service-details__list__item">
+                                            <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                            <span class="service-details__list__text">12-Month workmanship warranty.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="service-details__right">
+                                    <div class="service-details__thumb">
+                                        <img src="/assets/images/service/service-1-9.png" alt="Stone Repair Expert Sydney">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="service-details__title wow fadeInUp">Serving All Sydney Communities</h2>
+                    <p class="service-details__text">We provide on-site stone benchtop repairs to homeowners and businesses throughout:</p>
+                    <div class="row" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+                        <div class="col-md-4 text-small">
+                            <strong>Eastern Suburbs:</strong> Bondi, Vaucluse, Coogee, Double Bay.
+                        </div>
+                        <div class="col-md-4 text-small">
+                            <strong>North Shore:</strong> Mosman, Neutral Bay, Chatswood, St Ives.
+                        </div>
+                        <div class="col-md-4 text-small">
+                            <strong>Inner West & South:</strong> Balmain, Strathfield, Cronulla, Hurstville.
+                        </div>
+                    </div>
+
+                    <h2 class="service-details__title wow fadeInUp">Stone Repair FAQs</h2>
+                    <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix a chip on the edge of a Caesarstone benchtop?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p class="inner__text">Yes, edge chips are the most common repair we do in Sydney. We rebuild the edge profile so it's smooth and matches the rest of the kitchen benchtop.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accrodion active">
+                            <div class="accrodion-title">
+                                <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Is the repair food-safe?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p class="inner__text">Absolutely. Once our specialized stone resins are UV-cured, they are completely inert, non-toxic, and safe for kitchen food preparation areas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>How do I get a quote for stone repair?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p class="inner__text">Simply text a clear photo of the damage and a photo of the whole benchtop to <strong>0452 288 855</strong>. We'll provide a fast, no-obligation estimate.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="cta-one" style="padding: 60px 0; background: #222; color: #fff; text-align: center;">
+            <div class="container">
+                <h2>Save Your Stone Benchtop Today</h2>
+                <p>Fast, professional chip and crack repairs across Sydney. Don't replace it—Refinish it!</p>
+                <a href="/contact" class="thm-btn" style="margin-top: 20px;">Get a Free Quote Now</a>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Stone" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

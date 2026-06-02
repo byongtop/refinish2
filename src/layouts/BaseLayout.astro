@@ -1,0 +1,165 @@
+---
+const { title = "My Site", description = "" } = Astro.props;
+
+// 定义组件接受的 Props
+export interface Props {
+    title: string;
+    description: string;
+}
+
+// 1. 获取当前页面的完整 URL 对象
+const url = Astro.url;
+
+// 2. 使用 Astro.site (来自 astro.config.mjs) 和 Astro.url.pathname 来构建完整的规范 URL
+// 注意：我们在 pathname 的末尾添加一个斜杠，因为您的构建输出了 /about/index/
+// 您的规范化 URL 策略是 'always' (带斜杠)
+let canonicalURL = new URL(url.pathname, Astro.site);
+
+// 特殊处理首页，确保首页不是 /index/
+if (url.pathname === '/') {
+    canonicalURL = new URL(url.pathname, Astro.site);
+} else {
+    // 确保所有非首页 URL 结尾都有斜杠，以匹配 /about/index/ 的路由
+    // 如果您最终决定规范化 URL 不带斜杠，请在下面移除 .replace(/\/$/, "")
+    canonicalURL = new URL(url.pathname.replace(/\/?$/, '/'), Astro.site);
+}
+
+// 确保您的 astro.config.mjs 中设置了 site: 'https://www.yourdomain.com'
+// Astro.site 只有在配置了 site 属性时才有效。
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href={canonicalURL.href} />
+    <title>{title}</title>
+    <meta name="description" content={description}>
+
+    <!-- favicons -->
+    <link rel="icon" href="/favicon.png" sizes="48x48">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendors/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css">
+    <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/vendors/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/vendors/jarallax/jarallax.css">
+    <link rel="stylesheet" href="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css">
+    <link rel="stylesheet" href="/assets/vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="/assets/vendors/nouislider/nouislider.pips.css">
+    <link rel="stylesheet" href="/assets/vendors/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="/assets/vendors/wallox-icons/style.css">
+    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/vendors/slick-carousel/slick.css">
+    <link rel="stylesheet" href="/assets/vendors/slick-carousel/slick-theme.css">
+
+    <!-- template CSS -->
+    <link rel="stylesheet" href="/assets/css/wallox.css">
+    <slot name="header" />
+</head>
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(/assets/images/loader.png);"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- 页面内容插槽 -->
+        <slot />
+    </div>
+
+    <!-- mobile nav -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="/" aria-label="logo image"><img src="/assets/images/logo-light.png" width="155" alt="logo"></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:info@refinish.com.au">info@refinish.com.au</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:0452-288-855">0452-288-855</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__social">
+                <a href="https://facebook.com"><i class="icon-facebook1" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                <a href="https://twitter.com"><i class="icon-twitter1" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                <a href="https://instagram.com"><i class="icon-social-media" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                <a href="https://youtube.com"><i class="icon-youtube1" aria-hidden="true"></i><span class="sr-only">Youtube</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- search popup -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here...">
+                <button type="submit" aria-label="search submit" class="wallox-btn wallox-btn--base">
+                    <span><i class="icon-search"></i></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- scroll to top -->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__text">back top</span>
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+    </a>
+
+    <!-- JS -->
+    <script is:inline src="/assets/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script is:inline src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script is:inline src="/assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script is:inline src="/assets/vendors/jarallax/jarallax.min.js"></script>
+    <script is:inline src="/assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script is:inline src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script is:inline src="/assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script is:inline src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script is:inline src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script is:inline src="/assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script is:inline src="/assets/vendors/nouislider/nouislider.min.js"></script>
+    <script is:inline src="/assets/vendors/tiny-slider/tiny-slider.js"></script>
+    <script is:inline src="/assets/vendors/wnumb/wNumb.min.js"></script>
+    <script is:inline src="/assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script is:inline src="/assets/vendors/slick-carousel/slick.min.js"></script>
+    <script is:inline src="/assets/vendors/wow/wow.js"></script>
+    <script is:inline src="/assets/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script is:inline src="/assets/vendors/isotope/isotope.js"></script>
+    <script is:inline src="/assets/vendors/countdown/countdown.min.js"></script>
+    <script is:inline src="/assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script is:inline src="/assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+
+    <!-- GSAP -->
+    <script is:inline src="/assets/vendors/gsap/splittext.min.js"></script>
+    <script is:inline src="/assets/vendors/gsap/ScrollTrigger.min.js"></script>
+    <script is:inline src="/assets/vendors/gsap/gsap.js"></script>
+    <script is:inline src="/assets/js/wallox-gsap.js"></script>
+
+    <!-- template JS -->
+    <script is:inline src="/assets/js/wallox.js"></script>
+
+</body>
+</html>

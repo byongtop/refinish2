@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import MainSliderOne from '../components/main-slider-one.astro';
+import FeatureTwo from '../components/feature-two.astro';
+import AboutOne from '../components/about-one.astro';
+import WhyChooseOne from '../components/why-choose-one.astro';
+import ServiceOne from '../components/service-one.astro';
+import ProjectTwo from '../components/project-two.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import TeamTwo from '../components/team-two.astro';
+import BlogOne from '../components/blog-one.astro';
+import Quote from '../components/quote-request.astro';
+
+
+const title = "Benchtop, Floor, Stone & Carpet Repair Sydney | Refinish";
+
+const description = "Don't replace it, Refinish it! Sydney's experts in invisible repairs for benchtops, floors, stone, carpet & furniture. Save cost & time. Get a quote today.";
+
+---
+
+<BaseLayout {title} {description}>
+<script type="application/ld+json" slot="header">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Surface Refinish",
+      "legalName": "PERFECTION RESTORATION PTY LTD",
+      "image": "https://refinish.com.au/assets/images/logo-dark.png", 
+      "@id": "https://refinish.com.au",
+      "url": "https://refinish.com.au",
+      "telephone": "+61-452-288-855",
+      "priceRange": "$$",
+      "identifier": "64685884682",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "North Epping",
+        "addressRegion": "NSW",
+        "postalCode": "2121",
+        "addressCountry": "AU"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+61-452-288-855",
+        "contactType": "customer service",
+        "areaServed": "AU",
+        "availableLanguage": "en"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.7634,
+        "longitude": 151.1031
+      },
+      "jobType": "On-site Service",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sydney"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater Sydney"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "New South Wales"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Surface Restoration Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Invisible Carpet Repair",
+              "url": "https://refinish.com.au/service-carpet-repair/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stone Benchtop Chip Repair",
+              "url": "https://refinish.com.au/service-benchtop-repair/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Timber Floor Scratch Repair",
+              "url": "https://refinish.com.au/timber-floor-scratch-repair-sydney/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tile and Grout Restoration",
+              "url": "https://refinish.com.au/service-tile-repair/"
+            }
+          }
+        ]
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/refinish_au",
+        "https://www.instagram.com/refinish_au"
+      ],
+      "description": "Surface Refinish (operated by PERFECTION RESTORATION PTY LTD) is Australia's leading specialist in invisible surface restoration. We provide professional on-site repairs for benchtops, floors, stone, and carpets, saving you up to 80% compared to replacement."
+    }
+    </script>
+
+        <Header />
+        <MainSliderOne />
+        <FeatureTwo />
+        <section class="title">
+          <div class="container sec-title text-start">
+              <div class="d-flex align-items-center justify-content-start">
+              </div>
+              <h1 class="sec-title__title bw-split-in-up">Invisible Surface Restoration Sydney: Specialists in Benchtop, Floor, Stone & Carpet Repair</h1>
+          </div>
+        </section>
+        <AboutOne />
+        <ServiceOne />
+        <WhyChooseOne />
+        <ProjectTwo />
+        <TestimonialsContact />
+        <Quote />
+        <BlogOne />
+        <Footer />
+
+</BaseLayout>

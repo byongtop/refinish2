@@ -1,0 +1,94 @@
+---
+title: "Wood Floor Restoration"
+description: "Luxury wooden floor restoration project in Sydney. Flawless results."
+categories: ["Flooring", "Luxury Residential"]
+services: ["Flooring", "Luxury Residential"]
+mainImage: "/assets/images/project/project-l-1-1.jpg"
+images:
+  - "/assets/images/gallery/gallery-1-2.jpg"
+  - "/assets/images/gallery/gallery-1-2.jpg"
+  - "/assets/images/gallery/gallery-1-2.jpg"
+qualityTitle: "Quality Construction Management"
+qualityText:
+  - "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,"
+  - "Lorem Ipsum is simply dummy text of the new design printing and type setting Ipsum Take a look at our round up of the best shows coming soon to your telly box has been the is industrys. When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing."
+challengeTitle: "The Challenge of Project"
+challengeText: "Lorem Ipsum is simply dummy text of the new design printing and type setting Ipsum Take a look at our round up of the best shows coming soon to your telly box has been the is industrys. When an unknown printer took a galley of type and scrambled it to make a type specimen book."
+challengeList:
+  - "We’re professional1"
+  - "We use quality material2"
+  - "100% customers satisfaction3"
+managementTitle: "Quality Construction Management"
+managementText:
+  - "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. It uses a dictionary of over 200 Latin words."
+  - "Lorem Ipsum is simply dummy text of the new design printing and type setting Ipsum Take a look at our round up of the best shows coming soon to your telly box has been the is industrys. When an unknown printer took a galley of type and scrambled it to make a type specimen book."
+extraImage: "/assets/images/project/project-s-1-1.jpg"
+date: "2025-11-19"
+seoTitle: "Wood Floor Restoration Sydney | Refinish"
+seoDescription: "Professional luxury wooden floor restoration in Sydney. High-quality results guaranteed."
+---
+
+
+
+这个地板修复的案例是我们一个长期合作的房屋中介找的我们，租客己经退租，屋主即将入住。出现这个问题屋主不知道怎么办好，想替换地板也找不到一样的了，再说替换地板要先拆踢脚线，拆踢脚线要很小心，不能破坏踢脚线，更不能破坏墙面，否则修复范围扩大。地板打磨也不划算，只能整屋打磨刷漆，价格高，耗时长。这时中介找到了我们，屋主开的门，我们只用了3个小时现场调色，油漆修复，地板恢复了原貌，屋主表示很神奇
+
+用上面的大意和上面markdown格式帮我生成案例展示
+
+
+
+
+  projects: defineCollection({
+    schema: z.object({
+      title: z.string(),
+      description: z.string(),
+      categories: z.array(z.string()).optional(),
+      services: z.array(z.string()).optional(),
+      mainImage: z.string(),
+      images: z.array(z.string()).min(1),
+      qualityTitle: z.string(),
+      qualityText: z.array(z.string()),
+      challengeTitle: z.string(),
+      challengeText: z.string(),
+      challengeList: z.array(z.string()),
+      managementTitle: z.string(),
+      managementText: z.array(z.string()),
+      extraImage: z.string().optional(),
+      date: z.string().optional(),
+      seoTitle: z.string().optional(),
+      seoDescription: z.string().optional(),
+    }),
+  }),
+};
+
+用上面的defineCollection生成markdown格式的案例
+内容是地毯修复，找我们修复的是个留学生，养了一只小兔子，平时都在笼子里，这回她刚把小兔子放出来10分钟，就把地毯咬坏了，急坏了这个留学生，房子是租的，找了很多人都是要有备用地毯切割替换，可留学生找不到一样的地毯，租的房子在衣柜里切割也不行。最后留学生找到了我们，我们用线头做出来缺失的那块并和周围完美融合，几呼看不出来被修过，留学生丰常开心，这解决了她的一个大问题。
+
+
+
+
+  projects: defineCollection({
+    schema: z.object({
+      title: z.string(),
+      description: z.string(),
+      categories: z.array(z.string()).optional(),
+      services: z.array(z.string()).optional(),
+      mainImage: z.string(),
+      listImage: z.string(),
+      images: z.array(z.string()).min(1),
+      qualityTitle: z.string(),
+      qualityText: z.array(z.string()),
+      challengeTitle: z.string(),
+      challengeText: z.string(),
+      challengeList: z.array(z.string()),
+      managementTitle: z.string(),
+      managementText: z.array(z.string()),
+      extraImage: z.string().optional(),
+      date: z.string().optional(),
+      seoTitle: z.string().optional(),
+      seoDescription: z.string().optional(),
+    }),
+  }),
+
+用上面的defineCollection生成markdown格式的案例
+内容是benchtop修复，找我们修复的是租客，不小心把benchtop烫坏了，己经发黑，找了很多人都说只能换整个benchtop,最后找到了我们，我们上门用了3个小时，修复成功，租客很满意，可以用这个大纲写个故事
+

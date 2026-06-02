@@ -1,0 +1,224 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+
+// SEO Meta Data - Hybrid 专页（Sydney）
+const title = "Hybrid Floor Repair Sydney | Scratch & Dent Repair for Hybrid Flooring";
+const description =
+  "Professional hybrid floor repair in Sydney. We fix scratches, dents, chips and surface damage on hybrid flooring without board replacement. On-site, flexible and invisible hybrid floor restoration.";
+const keyword =
+  "hybrid floor repair Sydney, hybrid floor scratch repair, hybrid floor dent repair, hybrid flooring damage repair, hybrid plank repair Sydney, invisible hybrid floor repair";
+---
+
+<BaseLayout {title} {description} {keyword}>
+  <Header />
+
+  <section class="page-header">
+    <div
+      class="page-header__bg"
+      style="background-image: url(/assets/images/backgrounds/page-header-bg-service-hybrid-floor.jpg);"
+    ></div>
+    <div class="container">
+      <h1 class="page-header__title">Hybrid Floor Repair Sydney</h1>
+      <p style="color: white; font-size: 1.2rem;">
+        Invisible Scratch & Dent Repairs for Modern Hybrid Flooring
+      </p>
+
+      <div class="wallox-breadcrumb">
+        <ul class="wallox-breadcrumb__list list-unstyled">
+          <li><a href="/"><i class="icon-home"></i> Home</a></li>
+          <li><span>Services</span></li>
+          <li><span>Hybrid Floor Repair Sydney</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-details">
+    <div class="container">
+      <div class="row gutter-y-30">
+        <ServiceDetailLeft activeHref="/hybrid-floor-repair-sydney/" />
+
+        <div class="col-md-12 col-lg-8">
+          <div class="service-details__content">
+            <div
+              class="service-details__thumbnail wow fadeInUp"
+              data-wow-duration="1500ms"
+              data-wow-delay="300ms"
+            >
+              <img
+                src="/assets/images/service/service-detail-floor-repair.jpg"
+                alt="Hybrid Floor Repair Sydney"
+              />
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">
+              Expert Hybrid Floor Scratch & Dent Repair in Sydney
+            </h2>
+            <p class="service-details__text wow fadeInUp">
+              Hybrid flooring is popular in modern Sydney homes and apartments due to its durability and water resistance.
+              However, scratches, dents, and impact damage can still occur.
+              At <strong>Refinish</strong>, we provide
+              <strong>specialised hybrid floor repair services in Sydney</strong>,
+              restoring damaged areas without removing or replacing entire planks.
+            </p>
+
+            <p class="service-details__text wow fadeInUp">
+              Hybrid floors combine a rigid core with a decorative surface layer,
+              which requires
+              <strong>flexible, material-specific repair techniques</strong>.
+              Our on-site repairs are designed to move with the floor, preventing cracking,
+              peeling, or premature failure.
+            </p>
+
+            <h2 class="service-details__title wow fadeInUp">
+              Hybrid Floor Damage We Repair
+            </h2>
+            <ul class="wow fadeInUp">
+              <li><strong>Surface Scratches:</strong> From furniture movement, pets, or daily wear.</li>
+              <li><strong>Dents & Impact Marks:</strong> Caused by dropped objects and heavy loads.</li>
+              <li><strong>Edge Chips:</strong> Along plank joins and expansion gaps.</li>
+              <li><strong>Surface Cracks:</strong> Localised damage to the wear layer.</li>
+              <li><strong>Visible Wear Areas:</strong> High-traffic zones in apartments and rentals.</li>
+            </ul>
+
+            <h2 class="service-details__title wow fadeInUp">
+              Our Hybrid Floor Repair Process
+            </h2>
+            <ol class="service-details__text">
+              <li>
+                <strong>Condition Assessment:</strong>
+                We identify the type of hybrid flooring and assess the extent of the damage.
+              </li>
+              <li>
+                <strong>Surface Stabilisation:</strong>
+                The damaged area is cleaned and prepared to ensure long-lasting adhesion.
+              </li>
+              <li>
+                <strong>Flexible Resin Application:</strong>
+                Specialised repair compounds are applied to accommodate floor movement.
+              </li>
+              <li>
+                <strong>Colour & Texture Matching:</strong>
+                We recreate the plank’s colour and surface texture for a natural finish.
+              </li>
+              <li>
+                <strong>Protective Sealing:</strong>
+                A durable top layer is applied to protect against future wear.
+              </li>
+            </ol>
+
+            <h2 class="service-details__title wow fadeInUp">
+              Why Repair Hybrid Floors Instead of Replacing Planks?
+            </h2>
+            <div class="service-details__feature">
+              <div class="row wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                <div class="col-lg-6"><div class="service-details__left">
+                  <ul class="service-details__list list-unstyled">
+                    <li class="service-details__list__item">
+                      <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                      <span class="service-details__list__text">
+                        Lower Cost Than Full Plank Replacement
+                      </span>
+                    </li>
+                    <li class="service-details__list__item">
+                      <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                      <span class="service-details__list__text">
+                        No Need for Matching Spare Planks
+                      </span>
+                    </li>
+                    <li class="service-details__list__item">
+                      <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                      <span class="service-details__list__text">
+                        Repairs Completed On-Site in Hours
+                      </span>
+                    </li>
+                    <li class="service-details__list__item">
+                      <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                      <span class="service-details__list__text">
+                        Ideal for Apartments, Rentals & Builders
+                      </span>
+                    </li>
+                  </ul>
+                </div></div>
+                <div class="col-lg-6">
+                  <div class="service-details__thumb">
+                    <img
+                      src="/assets/images/service/service-1-9.png"
+                      alt="Professional Hybrid Floor Repair Sydney"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">
+              Hybrid Floor Repair Sydney – FAQs
+            </h2>
+            <div
+              class="faq-page__accordion wallox-accrodion wow fadeInUp"
+              data-wow-duration="1500ms"
+              data-wow-delay="700ms"
+              data-grp-name="wallox-accrodion"
+            >
+              <div class="accrodion">
+                <div class="accrodion-title">
+                  <h4 class="accrodion-title__text">
+                    <span class="accrodion-title__icon"></span>
+                    Can scratches on hybrid flooring be repaired?
+                  </h4>
+                </div>
+                <div class="accrodion-content">
+                  <div class="inner">
+                    <p class="inner__text">
+                      Yes. Most scratches and dents in hybrid flooring can be repaired
+                      without replacing planks, provided the damage is localised.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accrodion active">
+                <div class="accrodion-title">
+                  <h4 class="accrodion-title__text">
+                    <span class="accrodion-title__icon"></span>
+                    Will the repair crack as the floor moves?
+                  </h4>
+                </div>
+                <div class="accrodion-content">
+                  <div class="inner">
+                    <p class="inner__text">
+                      No. We use flexible repair materials designed to move with hybrid flooring,
+                      ensuring long-lasting and invisible results.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-one" style="padding: 60px 0; background: #222; color: #fff; text-align: center;">
+    <div class="container">
+      <h2>Need a Hybrid Floor Repair Quote in Sydney?</h2>
+      <p>
+        Text a photo of your hybrid floor damage to
+        <strong>0452 288 855</strong> for a fast, free estimate.
+      </p>
+      <a href="/contact" class="thm-btn" style="margin-top: 20px;">
+        Get My Free Quote
+      </a>
+    </div>
+  </section>
+
+  <ProjectCarousel category="Floor" />
+  <TestimonialsContact />
+  <Footer />
+</BaseLayout>

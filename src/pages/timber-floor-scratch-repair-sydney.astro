@@ -1,0 +1,251 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+// SEO Meta Data
+const title = "Timber Floor Scratch Repair Sydney | Invisible Wood Floor Restoration";
+const description =
+  "Expert timber floor scratch & dent repair in Sydney. We restore engineered and solid wood floors without full sanding. Save your bond or property value with invisible on-site repairs.";
+const keyword =
+  "timber floor scratch repair Sydney, wood floor repair Sydney, engineered floor repair, timber floor restoration, fix floor scratches Sydney";
+---
+
+<BaseLayout {title} {description} {keyword}>
+<script type="application/ld+json" slot="header">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Timber Floor Scratch Repair Sydney",
+  "serviceType": "Wood Floor Restoration",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Surface Refinish",
+    "image": "https://refinish.com.au/assets/images/logo-dark.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    },
+    "priceRange": "$$"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Sydney" },
+    { "@type": "AdministrativeArea", "name": "New South Wales" }
+  ],
+  "description": "Professional invisible timber floor scratch and dent repair for solid and engineered wood floors in Sydney. No sanding required.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Timber Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Engineered Wood Floor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Solid Timber Floor Scorch & Scratch Repair" } }
+    ]
+  }
+}
+</script>
+
+  <Header />
+
+  <section class="page-header">
+    <div
+      class="page-header__bg"
+      style="background-image: url(/assets/images/backgrounds/page-header-bg-service-timber-floor.jpg);"
+    ></div>
+    <div class="container">
+      <h1 class="page-header__title">Invisible Timber Floor Scratch Repair in Sydney</h1>
+      <p style="color: white; font-size: 1.2rem;">Don't Replace - Restore Your Solid or Engineered Wood Floors Locally</p>
+
+      <div class="wallox-breadcrumb">
+        <ul class="wallox-breadcrumb__list list-unstyled">
+          <li><a href="/"><i class="icon-home"></i> Home</a></li>
+          <li><span>Services</span></li>
+          <li><span>Timber Floor Repair Sydney</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-details">
+    <div class="container">
+      <div class="row gutter-y-30">
+        <ServiceDetailLeft activeHref="/timber-floor-scratch-repair-sydney/" />
+
+        <div class="col-md-12 col-lg-8">
+          <div class="service-details__content">
+            <div
+              class="service-details__thumbnail wow fadeInUp"
+              data-wow-duration="1500ms"
+              data-wow-delay="300ms"
+            >
+              <img
+                src="/assets/images/service/service-detail-floor-repair.jpg"
+                alt="Professional Timber Floor Scratch Repair in Sydney"
+              />
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">
+              Why Replacing Your Timber Floor Boards Isn't Always Necessary
+            </h2>
+            <p class="service-details__text wow fadeInUp">
+              Scratches, dents, and gouges on timber floors can instantly age an otherwise beautiful home. 
+              In the Sydney property market, floor condition is a major factor in rental bond refunds and home valuations.
+              At <strong>Refinish</strong>, we specialise in <strong>localised timber floor repair in Sydney</strong>, 
+              offering a surgical approach to restoration that targets only the damaged area.
+            </p>
+
+            <div class="service-details__special-box wow fadeInUp" style="background: #f9f9f9; padding: 25px; border-left: 4px solid #cc9966; margin: 30px 0;">
+              <h3>Engineered vs. Solid Timber: We Fix Both</h3>
+              <p>Many modern Sydney apartments use <strong>floating engineered floors</strong>. Unlike solid wood, these often have a very thin veneer layer that cannot withstand multiple full-room sandings. Our micro-repair technology is the perfect solution for engineered boards, as we fix the scratch without wearing down the remaining wood. For <strong>solid timber floors</strong> (like Australian Blackbutt or Spotted Gum), we precisely match the natural grain and heartwood colors to ensure an invisible blend.</p>
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">Common Timber Floor Damage We Restore</h2>
+            <p class="service-details__text">Sydney's climate and active lifestyles can be tough on wood floors. We provide on-site solutions for:</p>
+            <ul class="wow fadeInUp">
+              <li><strong>Deep Furniture Scratches:</strong> Usually caused by dragging sofas or chairs without felt pads.</li>
+              <li><strong>Impact Dents:</strong> From dropped heavy kitchenware or high-heeled shoes.</li>
+              <li><strong>Pet Claw Damage:</strong> Persistent scratches from dogs and cats that dull the finish.</li>
+              <li><strong>Engineered Floor Chipping:</strong> Occurring at the vulnerable edges of the planks.</li>
+              <li><strong>Installation Gaps & Dents:</strong> Minor mishaps during construction or renovation.</li>
+            </ul>
+
+            <h2 class="service-details__title wow fadeInUp">Our Precision Repair Process</h2>
+            <p class="service-details__text">Our 5-step restoration ensures your floor remains structurally sound and visually perfect:</p>
+            <ol class="service-details__text">
+              <li><strong>Debris Removal:</strong> We clean and stabilize the wood fibers to prevent further splintering.</li>
+              <li><strong>On-Site Tint Mixing:</strong> No pre-made fillers. We mix pigments live to match your floor's unique age and shade.</li>
+              <li><strong>High-Density Filling:</strong> We use industrial-grade resins that expand and contract with the wood.</li>
+              <li><strong>Grain Re-Creation:</strong> Using fine brushes, we hand-paint the wood grain through the repaired area.</li>
+              <li><strong>Sheen Balancing:</strong> We apply a protective coat to match your floor's specific gloss level (Matte, Satin, or Gloss).</li>
+            </ol>
+
+            <h2 class="service-details__title wow fadeInUp">Benefits for Sydney Homeowners & Tenants</h2>
+            <div class="service-details__feature">
+              <div class="row wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                <div class="col-lg-6">
+                  <div class="service-details__left">
+                    <ul class="service-details__list list-unstyled">
+                      <li class="service-details__list__item">
+                        <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                        <span class="service-details__list__text">Pass End-of-Lease Bond Inspections</span>
+                      </li>
+                      <li class="service-details__list__item">
+                        <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                        <span class="service-details__list__text">No Dust, No Odor, No Mess</span>
+                      </li>
+                      <li class="service-details__list__item">
+                        <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                        <span class="service-details__list__text">Cost-Effective vs Full Sanding</span>
+                      </li>
+                      <li class="service-details__list__item">
+                        <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                        <span class="service-details__list__text">Walk on it immediately after repair</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="service-details__thumb">
+                    <img src="/assets/images/service/service-1-9.png" alt="Invisible Timber Repair Outcome" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 20px; border: 1px solid #eee;">
+              <h4>Sydney Mobile Service Coverage</h4>
+              <p>As a 100% mobile service, we bring our timber restoration clinic to you. We serve all major Sydney regions including:</p>
+              <ul style="column-count: 2; list-style: none; padding: 0;">
+                <li>✔ Sydney CBD & Inner City</li>
+                <li>✔ North Shore (Mosman to Hornsby)</li>
+                <li>✔ Eastern Suburbs (Bondi to Randwick)</li>
+                <li>✔ Inner West (Balmain to Strathfield)</li>
+                <li>✔ Northern Beaches (Manly to Palm Beach)</li>
+                <li>✔ Hills District & Western Sydney</li>
+              </ul>
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp" style="margin-top: 50px;">
+              Common Questions About Wood Floor Restoration
+            </h2>
+            <div
+              class="faq-page__accordion wallox-accrodion wow fadeInUp"
+              data-wow-duration="1500ms"
+              data-wow-delay="700ms"
+              data-grp-name="wallox-accrodion"
+            >
+              <div class="accrodion">
+                <div class="accrodion-title">
+                  <h4 class="accrodion-title__text">
+                    <span class="accrodion-title__icon"></span>
+                    Can deep scratches in timber floors be repaired?
+                  </h4>
+                </div>
+                <div class="accrodion-content">
+                  <div class="inner">
+                    <p class="inner__text">
+                      Absolutely. Most deep scratches and even gouges from dropped objects can be restored using our micro-repair method. By filling and hand-painting the grain, the damage becomes invisible without needing to sand the entire floor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accrodion active">
+                <div class="accrodion-title">
+                  <h4 class="accrodion-title__text">
+                    <span class="accrodion-title__icon"></span>
+                    Will the repair match my floor's gloss level?
+                  </h4>
+                </div>
+                <div class="accrodion-content">
+                  <div class="inner">
+                    <p class="inner__text">
+                      Yes. Matching the sheen (Matte, Satin, Semi-Gloss, or High Gloss) is a crucial part of our process. We ensure the repaired area reflects light exactly like the rest of your timber floor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accrodion">
+                <div class="accrodion-title">
+                  <h4 class="accrodion-title__text">
+                    <span class="accrodion-title__icon"></span>
+                    Is the repair permanent?
+                  </h4>
+                </div>
+                <div class="accrodion-content">
+                  <div class="inner">
+                    <p class="inner__text">
+                      Yes. We use industrial-grade resins and top-coats designed for high-traffic areas. Once cured, the repair is as durable as the original factory finish and can be cleaned using standard floor maintenance methods.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-one" style="padding: 60px 0; background: #222; color: #fff; text-align: center;">
+    <div class="container">
+      <h2>Need a Timber Floor Repair Quote in Sydney?</h2>
+      <p style="font-size: 1.1rem; margin-bottom: 25px;">
+        Don't risk your bond or lower your home's value. Text a photo of the damage to
+        <strong style="color: #cc9966;">0452 288 855</strong> for a fast, free estimate.
+      </p>
+      <a href="/contact" class="thm-btn">Get My Free Quote</a>
+    </div>
+  </section>
+
+  <ProjectCarousel category="Floor" />
+  <TestimonialsContact />
+  <Quote />
+  <Footer />
+</BaseLayout>

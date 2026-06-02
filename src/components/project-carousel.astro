@@ -1,0 +1,111 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectListItem from '../../components/ProjectListItem.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+// 0. 定义 Props
+interface Props {
+    category?: string; // 接收可选的 category 字符串
+    limit?: number;    // 可选：限制显示数量
+}
+const { category: filterCategory, limit = 5 } = Astro.props;
+
+// 1. 获取所有项目
+const allProjects = await getCollection('projects');
+
+// 2. 根据 Props 参数筛选项目
+let projectsToProcess = allProjects; 
+
+if (filterCategory) {
+    // 如果存在 filterCategory 参数，则进行筛选
+    // .filter() 返回新数组
+    projectsToProcess = allProjects.filter(project => 
+        project.data.categories && project.data.categories.includes(filterCategory)
+    );
+}
+// ----------------------------------------------------
+// 核心修正点在这里：在排序前创建数组副本 (using [...projectsToProcess])
+// 3. 对 (筛选后的) 项目进行排序
+const sortedAndFilteredProjects = [...projectsToProcess].sort((a, b) => 
+    b.data.date.getTime() - a.data.date.getTime()
+);
+
+// 4. 限制显示数量
+const projectsToShow = sortedAndFilteredProjects.slice(0, limit);
+
+const actualProjectCount = projectsToShow.length > 3 ? projectsToShow.length : 3;
+
+---
+                <section class="project-page">
+            <div class="container">
+                <div class="project-page__item__carousel wallox-owl__carousel wallox-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{}'>
+
+                    {projectsToShow.map((project) => ( // <-- 替换为正确的变量 projectsToShow
+                    <div class="item">
+
+                        <div class="project-card wow fadeInUp" data-wow-duration='00ms' data-wow-delay='00ms'>
+                            <div class="project-card__thumb">
+                                <img src={project.data.listImage} alt={project.data.pageTitle}>
+                            </div>
+                            <div class="project-card__content">
+                                <div class="project-card__content__inner">
+                                    <span class="project-card__content__subtitle">
+                                            {project.data.categories && project.data.categories.length > 0 ? project.data.categories[0] : 'Restoration'}
+                                        </span>
+                                    <h4 class="project-card__content__title"><a href={`/projects/${project.slug}/`}">{project.data.pageTitle}</a></h4>
+                                </div>
+                                <a href={`/projects/${project.slug}/`} class="project-card__content__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    ))}
+
+                </div>
+            </div>
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function () {
+  var $carousel = $('.project-page__item__carousel');
+
+  // 确保找到了元素并且插件已加载
+  if ($carousel.length && typeof $.fn.owlCarousel === 'function') {
+    $carousel.owlCarousel({
+      items: 1,
+      margin: 0,
+      loop: true,
+      smartSpeed: 700,
+      nav: true,
+      // 注意：navText 的顺序是 [left, right]
+      navText: [
+        "<span class='icon-angle-right'></span>",
+        "<span class='icon-angle-left'></span>"
+      ],
+      dots: false,
+      autoplay: false,
+      responsive: {
+        0:   { items: 1 },
+        768: { items: 2 },
+        992: { items: data-project-count={actualProjectCount} }
+      }
+    });
+
+    // 按钮绑定（如果只有一个 carousel）
+    $('.service-one__carousel__nav--left').on('click', function (e) {
+      e.preventDefault();
+      $carousel.trigger('prev.owl.carousel');
+    });
+    $('.service-one__carousel__nav--right').on('click', function (e) {
+      e.preventDefault();
+      $carousel.trigger('next.owl.carousel');
+    });
+  }
+});
+</script>
+
+        </section>
+        <!-- Project section End -->
+
+

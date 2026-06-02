@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+const title = "Professional Plastic Surface Repair Sydney | Crack & Texture Restoration";
+const description = "Expert restoration for all plastic surfaces. We fix cracks, scratches, and UV fading on household, automotive, and commercial plastics using precision texture matching and structural bonding.";
+const keywords = "plastic repair Sydney, plastic crack repair, bumper restoration Sydney, dashboard repair, textured plastic fix, uPVC window repair, outdoor furniture restoration";
+---
+
+<BaseLayout {title} {description} {keywords}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-plastic.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Plastic Surface Restoration</h1>
+                <p style="color: white; font-size: 1.2rem;">Advanced structural repair and invisible texture matching for any plastic surface.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Plastic Repair</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-plastic-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-plastic-repair.jpg" alt="Expert plastic surface restoration and crack repair">
+                            </div>
+                            
+                            <h2 class="service-details__title wow fadeInUp">Restoring What Others Replace</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Plastic is everywhere, but it's also prone to cracking, UV degradation, and scratching. Replacing a custom-molded plastic component—whether it's a <strong>uPVC window frame, a vehicle bumper, or a designer furniture piece</strong>—can be incredibly expensive and time-consuming.
+                            </p>
+                            <p class="service-details__text wow fadeInUp">
+                                Our restoration process goes beyond a simple paint job. We use <strong>molecular bonding fillers</strong> to repair cracks structurally and <strong>texture-replication tools</strong> to mimic the original grain of the surface, ensuring the repair is impossible to spot.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">Comprehensive Repair Solutions</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 style="font-size: 1.4rem; color: #cc3344; margin-bottom: 15px;">Residential & Commercial</h3>
+                                    <ul class="list-unstyled service-details__list">
+                                        <li><i class="icon-check"></i> <strong>uPVC Window Frames:</strong> Fix drill holes and chips.</li>
+                                        <li><i class="icon-check"></i> <strong>Acrylic & Resin Surfaces:</strong> Polish and buff deep scratches.</li>
+                                        <li><i class="icon-check"></i> <strong>Appliances & Trims:</strong> Restore faded or heat-damaged panels.</li>
+                                        <li><i class="icon-check"></i> <strong>Outdoor Plastics:</strong> Reverse UV chalking and fading.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 style="font-size: 1.4rem; color: #cc3344; margin-bottom: 15px;">Automotive & Specialized</h3>
+                                    <ul class="list-unstyled service-details__list">
+                                        <li><i class="icon-check"></i> <strong>Bumper Bars:</strong> Repair scuffs and impact cracks.</li>
+                                        <li><i class="icon-check"></i> <strong>Dashboards:</strong> Fix cracks and sun damage.</li>
+                                        <li><i class="icon-check"></i> <strong>Door Trims:</strong> Restore scuffed textured plastics.</li>
+                                        <li><i class="icon-check"></i> <strong>Interior Consoles:</strong> Precision colour matching.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-details__feature" style="margin-top: 40px;">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <h3 class="service-details__title" style="font-size: 1.6rem;">Why Choose Restoration?</h3>
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Structural Molecular Bonding</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Invisible Texture Replication</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Durable UV-Stable Coatings</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Saves up to 70% vs Replacement</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-detail-plastic-2.jpg" alt="Plastic texture restoration process">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Plastic Repair FAQs</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you restore the "grainy" texture on plastic parts?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. We use professional grain-copying techniques to recreate the exact texture of the surrounding area, so the repair doesn't look like a flat, smooth patch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Is the repair strong enough for bumpers or structural parts?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">For cracks, we use plastic welding or reinforced mesh bonding. While not intended for high-load structural engine components, it is more than durable enough for body panels, trims, and furniture.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>What about faded outdoor furniture?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">If the plastic is "chalking" or faded from the sun, we can chemically clean and re-coat it with UV-resistant pigments to restore its original vibrant colour.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Plastic" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

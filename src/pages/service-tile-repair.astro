@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+// SEO 优化：强化“隐形修复”和“悉尼”标签
+const title = "Invisible Tile Repair Sydney | Fix Chipped & Cracked Tiles";
+const description = "Professional tile repair in Sydney. We fix chips, cracks, and scratches on ceramic, porcelain, and stone tiles without replacement. Seamless colour matching and hand-finished textures.";
+const keyword = "tile repair Sydney, fix chipped tiles, ceramic tile restoration, porcelain crack repair, bathroom tile fix, kitchen floor repair, invisible tile restoration, Sydney handyman tile";
+---
+
+<BaseLayout {title} {description} {keyword}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-tile-repair.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Invisible Tile Repair & Restoration Sydney</h1>
+                <p style="color: white; font-size: 1.2rem;">Seamless Repairs for Ceramic, Porcelain, and Natural Stone surfaces.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Tile Repair Sydney</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-tile-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-tile-repair.jpg" alt="Seamless Tile Chip and Crack Repair Sydney">
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Don't Replace Your Tiles—Restore Them!</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Finding a matching tile for a 5-year-old floor is nearly impossible. Replacing a single tile often leads to damaged waterproofing or mismatched grout lines. At <strong>Refinish</strong>, our Sydney-based experts specialize in <strong>on-site tile restoration</strong> that makes damage disappear without the mess and cost of a full replacement.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">What Makes Our Tile Repair Different?</h2>
+                            <p class="service-details__text">We don't just fill holes; we recreate the tile's soul. Our advanced 4-step process ensures a flawless finish:</p>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Precise Colour Matching</h4>
+                                    <p class="text-small">We custom-mix pigments on-site to match your tile’s exact shade, including its unique undertones.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Texture Recreation</h4>
+                                    <p class="text-small">Whether your tile is matte, high-gloss, or textured, we replicate the surface feel by hand.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Pattern Continuity</h4>
+                                    <p class="text-small">For marble-look or grain-patterned tiles, we hand-paint the veins to ensure the repair is invisible.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Structural Bonding</h4>
+                                    <p class="text-small">We use industrial-grade resins that bond permanently, ensuring the repair won't pop out over time.</p>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Materials We Specialize In</h2>
+                            <p class="service-details__text wow fadeInUp">Our technicians are trained to work with a wide variety of Sydney's most popular flooring materials:</p>
+                            <ul class="service-details__text">
+                                <li><strong>Porcelain Tiles:</strong> Repairing chips caused by dropped heavy objects.</li>
+                                <li><strong>Ceramic Tiles:</strong> Fixing surface cracks and worn edges.</li>
+                                <li><strong>Polished Vitrified Tiles:</strong> Restoring the high-gloss mirror finish.</li>
+                                <li><strong>Natural Stone:</strong> Specialized repairs for Travertine, Marble, and Granite tiles.</li>
+                            </ul>
+
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Waterproof repairs (Safe for Showers)</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Ready to walk on in 2 hours</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Saves you from buying spare tiles</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Ideal for Sydney rental inspections</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-1-9.png" alt="Sydney Tile Crack Repair Specialist">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Perfect for Tenants & Homeowners</h2>
+                            <p class="service-details__text">
+                                Accidental damage happens. If you've dropped a pot in a rental kitchen or have a chipped tile in your new home, don't panic. Our <strong>invisible tile repair service in Sydney</strong> is the most cost-effective way to pass your property inspection or maintain your home’s value without a full renovation.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">Frequently Asked Questions</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix a tile in a shower?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. We use waterproof, high-bonding resins specifically designed for wet areas like bathrooms and shower recesses.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>What if my tile has a complex pattern?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Our technicians are skilled in hand-finishing techniques. We recreate the marble veins or stone speckles to ensure the repair blends with the existing pattern.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>Is the repair permanent?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. Once cured, the repair material is extremely hard and durable. It is designed to withstand foot traffic and regular cleaning for years to come.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Tile" />
+        <TestimonialsContact />
+  <Quote />
+      <Footer />
+</BaseLayout>

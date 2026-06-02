@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+const title = "Professional Fiberglass & Gelcoat Repair | Seamless Structural Restoration";
+const description = "Expert fiberglass restoration for shower bases, RVs, boats, and industrial panels. We repair cracks, chips, and impact damage using high-strength resins and precision gelcoat colour matching.";
+const keywords = "fiberglass repair Sydney, gelcoat restoration, shower base repair, RV fiberglass fix, boat gelcoat repair, fiberglass crack repair, seamless fiberglass restoration";
+---
+
+<BaseLayout {title} {description} {keywords}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-fiberglass.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Fiberglass & Gelcoat Restoration</h1>
+                <p style="color: white; font-size: 1.2rem;">Structural Integrity Meets Flawless Aesthetics — Without the Cost of Replacement.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Fiberglass Repair</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-fiberglass-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-fiberglass-repair.jpg" alt="Professional fiberglass and gelcoat structural repair">
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Advanced Restoration for Challenging Damage</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Fiberglass is prized for its strength, but when it <strong>cracks, chips, or delaminates</strong>, the structural integrity of the entire panel can be compromised. Whether it's a leaking shower base, a damaged RV panel, or a scuffed boat hull, the traditional solution of "rip out and replace" is expensive, messy, and time-consuming.
+                            </p>
+                            <p class="service-details__text wow fadeInUp">
+                                Our technical approach focuses on <strong>structural rebuilding</strong>. We don't just fill the surface; we reinforce the core using high-performance resins and then refinish the exterior with custom-tinted gelcoats. This ensures the repair isn't just invisible—it's often stronger than the original surrounding material.
+                            </p>
+
+                            <h3 class="service-details__title wow fadeInUp" style="font-size: 1.8rem; margin-top: 40px;">Specialised Repair Applications</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div style="background: #f4f7fa; padding: 25px; border-radius: 8px; margin-bottom: 20px; border-bottom: 3px solid #0056b3;">
+                                        <h4 style="color: #0056b3; margin-bottom: 10px;">Bathroom & Domestic</h4>
+                                        <ul class="list-unstyled service-details__list" style="margin: 0;">
+                                            <li><i class="icon-check"></i> Shower Base Crack Repair</li>
+                                            <li><i class="icon-check"></i> Bathtub Chip Restoration</li>
+                                            <li><i class="icon-check"></i> Acrylic & Resin Fixtures</li>
+                                            <li><i class="icon-check"></i> Waterproof Seal Integrity</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="background: #f4f7fa; padding: 25px; border-radius: 8px; margin-bottom: 20px; border-bottom: 3px solid #0056b3;">
+                                        <h4 style="color: #0056b3; margin-bottom: 10px;">Marine & Transport</h4>
+                                        <ul class="list-unstyled service-details__list" style="margin: 0;">
+                                            <li><i class="icon-check"></i> RV & Caravan Body Repair</li>
+                                            <li><i class="icon-check"></i> Boat Hull Gelcoat Chips</li>
+                                            <li><i class="icon-check"></i> Jet Ski Scuff Restoration</li>
+                                            <li><i class="icon-check"></i> UV-Resistant Finishes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Why Our Technical Process is Superior</h2>
+                            <p class="service-details__text">Fiberglass repair is a science. To ensure a long-lasting bond, we follow a rigorous multi-step protocol:</p>
+                            
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp">
+                                    <div class="col-lg-7">
+                                        <ul class="service-details__list list-unstyled">
+                                            <li class="service-details__list__item">
+                                                <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                <span class="service-details__list__text"><strong>Fracture Arresting:</strong> We stop cracks from spreading.</span>
+                                            </li>
+                                            <li class="service-details__list__item">
+                                                <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                <span class="service-details__list__text"><strong>Resin Reinforcement:</strong> Structural bonding from the inside out.</span>
+                                            </li>
+                                            <li class="service-details__list__item">
+                                                <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                <span class="service-details__list__text"><strong>Gelcoat Matching:</strong> Precise UV-stable colour tinting.</span>
+                                            </li>
+                                            <li class="service-details__list__item">
+                                                <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                <span class="service-details__list__text"><strong>Precision Buffing:</strong> Achieving the perfect factory gloss.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="service-details__thumb">
+                                            <img src="/assets/images/service/service-detail-fiberglass-2.jpg" alt="Fiberglass structure repair process">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Fiberglass Repair FAQs</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>My shower base is "flexing" and cracking. Can it be fixed?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. Often, we can inject structural support foam or resin underneath the base to stop the flexing before repairing the surface cracks, preventing the issue from returning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Is the repair waterproof?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Absolutely. We use marine-grade resins and gelcoats specifically designed for constant water exposure and immersion.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>Can you match the colour of an older, faded RV or boat?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. We tint our gelcoats on-site to match the current state of your fiberglass, accounting for age and sun-fading for a seamless blend.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Fiberglass" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

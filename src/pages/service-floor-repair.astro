@@ -1,0 +1,273 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+// SEO 优化后的 Meta Data - 锁定悉尼和具体地板类型
+const title = "Floor Repair Sydney | Floor Scratch & Dent Restoration";
+const description = "Best floor scratch and dent repair in Sydney. We restore timber, laminate, hybrid, and vinyl floors without replacement. Invisible results for deep scratches, gouges, and water marks. Professional service for Sydney homes.";
+const keyword = "floor scratch repair Sydney, timber floor repair Sydney, hybrid floor dent repair, laminate floor restoration, vinyl plank repair Sydney, invisible floor mending, floor repair service near me";
+---
+
+<BaseLayout {title} {description} {keyword}>
+<script type="application/ld+json" slot="header">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you repair deep scratches and gouges in hybrid and vinyl flooring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Hybrid and vinyl floors are common in Sydney apartments but prone to scratching. We use specialized flexible resins that bond with the plank and move with the floor. We then custom-blend pigments to match the exact colour and texture of your flooring, making the damage virtually invisible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the floor repair pass a rental property inspection for my bond return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our repairs are specifically designed to meet the high standards of Sydney real estate agents and landlords. By recreating the natural wood grain and matching the sheen (matte, satin, or gloss), our 'invisible' mending ensures the damage is undetectable during routine or end-of-lease inspections."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to sand the entire floor to fix a few scratches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our localized restoration process targets only the damaged boards. This saves you thousands of dollars compared to a full sand and polish, and because there is no heavy machinery involved, the process is 100% dust-free and much faster than traditional floor refinishing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you match the wood grain on timber or engineered floor boards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our master technicians use a hand-painting technique to re-draw the wood grain and natural knots over the filler. Whether it's Australian Spotted Gum, Blackbutt, or European Oak, we ensure the repaired area flows seamlessly with the rest of your floor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the floor repair take and when can I walk on it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most floor scratch or dent repairs in Sydney are completed within 1-2 hours. We use UV-curing technology or fast-setting resins, allowing you to walk on the floor immediately after we finish the job."
+          }
+        }
+      ]
+    }
+    </script>
+  <Header />
+
+  <section class="page-header">
+    <div
+      class="page-header__bg"
+      style="background-image: url(/assets/images/backgrounds/page-header-bg-service-floor-repair.jpg);"
+    ></div>
+    <div class="container">
+      <h1 class="page-header__title">Floor Repair Sydney</h1>
+      <p style="color: white; font-size: 1.2rem;">Seamless Restoration for Timber, Hybrid, Laminate & Vinyl Floors</p>
+
+      <div class="wallox-breadcrumb">
+        <ul class="wallox-breadcrumb__list list-unstyled">
+          <li><a href="/"><i class="icon-home"></i> Home</a></li>
+          <li><span>Services</span></li>
+          <li><span>Floor Repair Sydney</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-details">
+    <div class="container">
+      <div class="row gutter-y-30">
+        <ServiceDetailLeft activeHref="/service-floor-repair/"/>
+
+        <div class="col-md-12 col-lg-8">
+          <div class="service-details__content">
+            <div
+              class="service-details__thumbnail wow fadeInUp"
+              data-wow-duration="1500ms"
+              data-wow-delay="300ms"
+            >
+              <img
+                src="/assets/images/service/service-detail-floor-repair.jpg"
+                alt="Before and after timber floor repair in Sydney CBD"
+              />
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">
+              Invisible Floor Scratch & Dent Repair Across Greater Sydney
+            </h2>
+            <p class="service-details__text wow fadeInUp">
+              Don't let deep scratches or unsightly dents ruin your home's interior. At <strong>Refinish</strong>, we specialize in <strong>localised floor restoration across Sydney</strong>. Whether it's a luxury apartment in the <strong>Sydney CBD</strong> or a family residence in the <strong>Inner West</strong>, our technicians provide seamless fixes that blend perfectly with your existing surface.
+            </p>
+            <p class="service-details__text wow fadeInUp">
+              Whether you have <strong>solid timber, engineered wood, hybrid, or vinyl planks</strong>, we offer a mobile service that comes to you. Our process is fast, dust-free, and designed to save you thousands of dollars while passing strict rental bond inspections.
+            </p>
+
+            <h2 class="service-details__title wow fadeInUp">Specialised Repairs for All Flooring Types</h2>
+            <p class="service-details__text wow fadeInUp">Each floor material has a unique surface texture and sheen. We tailor our repair technique to match:</p>
+            <div class="row mb-4">
+                <ul class="list-unstyled">
+                    <li><strong>Timber & Wood:</strong> We recreate the natural wood grain and match the stain precisely, whether it's a matte or high-gloss finish.</li>
+                    <li><strong>Laminate Flooring:</strong> We use specialized hard fillers to fix chips and gouges that are common in high-traffic areas.</li>
+                    <li>
+                      <strong>Hybrid & Vinyl Planks:</strong> These modern surfaces are popular in many 
+                      <a href="/hybrid-floor-repair-sydney/">Sydney hybrid floor repair</a> projects we undertake. 
+                      We use flexible resins that bond with the plank to ensure long-term durability.
+                    </li>
+                    <li><strong>Engineered Boards:</strong> We repair the top veneer layer without sanding through to the core.</li>
+                </ul>
+        <ul class="list-unstyled">
+        <li>
+    <strong>Explore Our Floor Repair Services:</strong>
+</li>
+            <li>
+                <a href="/timber-floor-scratch-repair-sydney/">
+                    Timber Floor Scratch Repair Sydney
+                </a>
+            </li>
+            <li>
+                <a href="/laminate-floor-dent-repair-sydney/">
+                    Laminate Floor Dent Repair Sydney
+                </a>
+            </li>
+            <li>
+                <a href="/hybrid-floor-repair-sydney/">
+                    Hybrid Floor Repair Sydney
+                </a>
+            </li>
+            <li>
+                <a href="/vinyl-plank-repair-sydney/">
+                    Vinyl Plank Repair Sydney
+                </a>
+            </li>
+        </ul>
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">Our Professional Floor Restoration Process</h2>
+            <p class="service-details__text">We take a systematic approach to ensure the repair is as invisible as possible:</p>
+            <ol class="service-details__text">
+                <li><strong>Surface Preparation:</strong> We clean the damaged area and remove any loose fragments or old wax.</li>
+                <li><strong>Colour Formulation:</strong> Our technicians custom-mix professional pigments on-site to match your floor's exact shade and undertone.</li>
+                <li><strong>Filling and Levelling:</strong> We fill the scratch or dent with high-grade fillers, ensuring it is perfectly level with the surrounding floor.</li>
+                <li><strong>Grain Re-creation:</strong> For wood floors, we hand-draw the grain patterns to ensure the repair blends seamlessly.</li>
+                <li><strong>Protective Coating:</strong> We apply a UV-stable topcoat to match the original sheen (Matte, Satin, or Gloss) and ensure long-term durability.</li>
+            </ol>
+
+            <h2 class="service-details__title wow fadeInUp">Common Damage We Fix in Sydney Homes</h2>
+            <ul class="wow fadeInUp">
+              <li><strong>Deep Gouges:</strong> Often caused by moving heavy furniture or dropping sharp objects.</li>
+              <li><strong>Scuff Marks & Scratches:</strong> From pets, high heels, or sliding chairs.</li>
+              <li><strong>Water Rings & Discolouration:</strong> Minor moisture damage from pot plants or spills.</li>
+              <li><strong>Chipped Corners:</strong> Common in laminate and hybrid flooring where boards meet.</li>
+              <li><strong>Gap Filling:</strong> Minimizing the appearance of gaps between boards due to temperature changes.</li>
+            </ul>
+
+            <h2 class="service-details__title wow fadeInUp">Serving Every Suburb in Sydney</h2>
+            <p class="service-details__text">We offer on-site floor repair services across the entire Sydney metropolitan area, including:</p>
+            <div class="row" style="background: #f4f4f4; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+                <div class="col-md-4 text-small">
+                    <strong>Inner Sydney:</strong><br/>CBD, Surry Hills, Pyrmont, Darlinghurst.
+                </div>
+                <div class="col-md-4 text-small">
+                    <strong>Northern Suburbs:</strong><br/>Chatswood, North Sydney, Ryde, Hornsby.
+                </div>
+                <div class="col-md-4 text-small">
+                    <strong>Western Sydney:</strong><br/>Parramatta, Blacktown, Penrith, Liverpool.
+                </div>
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">Why Choose Localised Repair Over Replacement?</h2>
+            <div class="service-details__feature">
+                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                    <div class="col-lg-6">
+                        <div class="service-details__left">
+                            <ul class="service-details__list list-unstyled">
+                                <li class="service-details__list__item">
+                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                    <span class="service-details__list__text">Cost-Effective: Save up to 80% vs Replacement</span>
+                                </li>
+                                <li class="service-details__list__item">
+                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                    <span class="service-details__list__text">No Dust or Sanding Required</span>
+                                </li>
+                                <li class="service-details__list__item">
+                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                    <span class="service-details__list__text">Repairs Completed in Hours</span>
+                                </li>
+                                <li class="service-details__list__item">
+                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                    <span class="service-details__list__text">Bond-Ready Results for Tenants</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-details__right">
+                            <div class="service-details__thumb">
+                                <img src="/assets/images/service/service-1-9.png" alt="Sydney Professional Floor Repair Specialist">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="service-details__title wow fadeInUp">Floor Repair FAQs</h2>
+            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay="700ms" data-grp-name="wallox-accrodion">
+                <div class="accrodion">
+                    <div class="accrodion-title">
+                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix scratches in hybrid flooring?</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p class="inner__text">Yes! Hybrid flooring is popular in Sydney, and while it's tough, it can scratch. We use high-precision fillers and pigments to hide these scratches perfectly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accrodion active">
+                    <div class="accrodion-title">
+                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Will the repair be visible to the naked eye?</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p class="inner__text">Our goal is an invisible finish. Under normal lighting and viewing distance, most repairs are undetectable. This is why we are the top choice for Sydney rental bond repairs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accrodion">
+                    <div class="accrodion-title">
+                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>How soon can I walk on the floor after repair?</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p class="inner__text">Most of our repairs are cured using UV light or fast-setting resins, meaning you can walk on the area immediately or within 30 minutes of completion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-one" style="padding: 60px 0; background: #222; color: #fff; text-align: center;">
+      <div class="container">
+          <h2>Need an Instant Floor Repair Quote?</h2>
+          <p>Text a photo of your floor damage to <strong>0452 288 855</strong> for a free estimate in Sydney!</p>
+          <a href="/contact" class="thm-btn" style="margin-top: 20px;">Get My Free Quote</a>
+      </div>
+  </section>
+
+  <ProjectCarousel category="Floor" />
+  <TestimonialsContact />
+  <Quote />
+  <Footer />
+</BaseLayout>

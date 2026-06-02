@@ -1,0 +1,246 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+// SEO 优化：核心词前置
+const title = "Carpet Repair Sydney | Professional Invisible Patching & Burn Repair";
+const description = "Need invisible carpet repair in Sydney? We fix cigarette burns, iron marks & pet damage using seamless hand-tufted reweaving. Save your bond & money today. Get a free quote!";
+const keyword = "carpet repair Sydney, invisible carpet repair, carpet burn repair Sydney, fix carpet hole Sydney, bond return carpet repair, wool carpet reweaving, carpet patching Sydney";
+---
+
+<BaseLayout {title} {description} {keyword}>
+    <script type="application/ld+json" slot="header">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Professional Carpet Repair Sydney",
+        "serviceType": "Invisible Mending & Patching",
+        "areaServed": {
+          "@type": "City",
+          "name": "Sydney"
+        },
+        "description": "Specialist hand-tufted carpet reweaving for cigarette burns, iron marks, and pet damage across Sydney.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Refinish",
+          "image": "https://refinish.com.au/assets/images/logo-light.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sydney",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Will the repaired carpet area look different?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Because we harvest original fibers from hidden areas of your own carpet, the color and texture match is 100%. Our hand-tufted reweaving blends seamlessly into the original pattern, making it virtually invisible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you fix carpet burns from irons or cigarettes in Sydney?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Iron and cigarette burns are our specialty. We remove the scorched fibers and manually re-weave fresh fibers into the backing, ensuring a seamless finish that passes strict real estate inspections."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a professional carpet repair take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most on-site carpet repairs in Sydney take between 1 to 2 hours depending on the size of the damage. We work efficiently to minimize disruption while ensuring a high-quality finish."
+            }
+          },
+
+          {
+            "@type": "Question",
+            "name": "Do you offer mobile carpet repair near me in Sydney?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Refinish provides a fully mobile invisible carpet repair service across Sydney. We frequently attend residential and commercial call-outs in Zetland, Randwick, Strathfield, and the North Shore."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is invisible reweaving better than traditional carpet patching?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Traditional patching involves cutting out squares which often leaves visible seams. Our hand-tufting method integrates with the carpet's original weave for a much more durable and truly invisible finish."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <Header />
+    
+    <section class="page-header">
+        <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-carpet-repair.jpg);"></div>
+        <div class="container">
+<h1 class="page-header__title">Professional Carpet Repair Sydney</h1>
+<p style="color: white; font-size: 1.2rem; line-height: 1.6;">
+    <strong>Don't replace your entire carpet!</strong> Most damage can be restored for a fraction of the cost. 
+    As Sydney's experts in <strong>invisible carpet patching</strong>, we make holes, cigarette burns, and iron marks disappear—helping you save money and get your rental bond back.
+</p>            <div class="wallox-breadcrumb">
+                <ul class="wallox-breadcrumb__list list-unstyled">
+                    <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                    <li><span>Services</span></li>
+                    <li><span>Carpet Repair Sydney</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-details">
+        <div class="container">
+            <div class="row gutter-y-30">
+                <ServiceDetailLeft activeHref="/service-carpet-repair/" />
+                <div class="col-md-12 col-lg-8">
+                    <div class="service-details__content">
+                        <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                            <img src="/assets/images/service/service-detail-carpet-repair.jpg" alt="Before and After Invisible Carpet Repair Sydney">
+                            <p style="margin-top: 10px; font-style: italic; font-size: 0.9rem;">*Our seamless reweaving makes burns and holes virtually undetectable to the naked eye.</p>
+                        </div>
+
+                        <h2 class="service-details__title wow fadeInUp">Our Carpet Repair Philosophy: Fast, Invisible, and Cost-Effective</h2>
+                        <p class="service-details__text wow fadeInUp">
+                            If you are facing carpet damage, don't rush into an expensive replacement. At <strong>Refinish</strong>, we specialize in high-end <a href="/service-carpet-repair/">carpet repair in Sydney</a>. Unlike traditional carpet patching that leaves visible square seams, our unique <strong>Hand-Tufted Reweaving</strong> technique restores damaged areas by integrating fibers directly back into the existing weave. 
+                        </p>
+                        <p class="service-details__text wow fadeInUp">
+                            This precision method is ideal for luxury homes, commercial spaces, and <strong>Sydney rental bond returns</strong>. Whether it is a <strong>cigarette burn in a Pyrmont apartment</strong> or <strong>pet damage in Macquarie Park</strong>, our technicians ensure the repair is virtually undetectable, saving you time and thousands of dollars in replacement costs.
+                        </p>
+
+                        <div style="background: #eef7ff; padding: 20px; border-left: 4px solid #007bff; margin: 30px 0; border-radius: 0 8px 8px 0;">
+                            <h4 style="margin-bottom: 15px;">Why Refinish is Sydney's #1 Choice</h4>
+                            <ul class="list-unstyled">
+                                <li>✅ <strong>True Invisible Finish:</strong> No square patch marks or visible seams.</li>
+                                <li>✅ <strong>Original Fiber Match:</strong> We harvest fibers from your own carpet for 100% color accuracy.</li>
+                                <li>✅ <strong>Bond Return Success:</strong> Proven to pass the strictest Real Estate inspections in Sydney.</li>
+                                <li>✅ <strong>12-Month Warranty:</strong> We stand by the quality of our craftsmanship.</li>
+                            </ul>
+                        </div>
+
+                        <h2 class="service-details__title wow fadeInUp">Our 5-Step Invisible Restoration Process</h2>
+                        <div class="row" style="margin-bottom: 30px;">
+                            <div class="col-md-12">
+                                <p>Our process is far more advanced than a simple "cut and paste" patch. Here is how we achieve seamless results for our Sydney clients:</p>
+                                <ul class="list-unstyled">
+                                    <li><strong>1. Damage Assessment:</strong> Our process begins by identifying the carpet fiber—whether it's 100% Wool, Nylon, Solution Dyed Nylon (SDN), or Polyester. Each material requires a specific tension during the hand-tufting process to ensure a perfect blend.</li>
+                                    <li><strong>2. Fiber Harvesting:</strong> We carefully extract original fibers from hidden areas (like inside closets) to ensure a perfect match.</li>
+                                    <li><strong>3. Foundation Prepping:</strong> The damaged spot is cleaned and the backing is prepared without cutting large sections.</li>
+                                    <li><strong>4. Hand-Tufted Reweaving:</strong> Our technicians manually weave the new fibers into the existing structure by hand.</li>
+                                    <li><strong>5. Final Grooming:</strong> The area is trimmed and blended to match the height and density of the surrounding carpet.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h2 class="service-details__title wow fadeInUp">What We Can Fix: From Burns to Pet Damage</h2>
+                        <p class="service-details__text wow fadeInUp">Our hand-tufted technique works on all carpet types. In Sydney, we frequently assist with:</p>
+                        <ul class="wow fadeInUp">
+                            <li><strong>Cigarette & Iron Burns:</strong> We remove scorched fibers and reweave new ones for a seamless look.</li>
+                            <li><strong>Pet Damage:</strong> Restoring delamination or frayed edges caused by cats and dogs.</li>
+                            <li><strong>Rental Bond Issues:</strong> Our repairs pass even the strictest real estate inspections in Sydney.</li>
+                            <li><strong>Worn Patches & Snags:</strong> High-traffic areas or snags are reconstructed to look like new.</li>
+                        </ul>
+
+                        <h2 class="service-details__title wow fadeInUp">Serving All of Greater Sydney</h2>
+                        <p class="service-details__text">We are a fully mobile service. Our specialist technicians travel across the entire Sydney metropolitan area, including:</p>
+
+                        <div class="row" style="background: #f9f9f9; padding: 25px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee;">
+                            <div class="col-md-3 col-sm-6 text-small" style="margin-bottom: 15px;">
+                                <strong>City & East Sydney:</strong><br/>
+                                Professional carpet repairs in <strong>Pyrmont</strong>, <strong>Zetland</strong>, <strong>Randwick</strong>, <strong>Bondi</strong>, and Surry Hills.
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-small" style="margin-bottom: 15px;">
+                                <strong>Northern Suburbs:</strong><br/>
+                                Invisible mending for <strong>Macquarie Park</strong>, <strong>Hornsby</strong>, <strong>Chatswood</strong>, and North Sydney.
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-small" style="margin-bottom: 15px;">
+                                <strong>Inner West & West:</strong><br/>
+                                Specialist burn repair in <strong>Newtown</strong>, <strong>Strathfield</strong>, <strong>North Strathfield</strong>, and Parramatta.
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-small" style="margin-bottom: 15px;">
+                                <strong>South & St George:</strong><br/>
+                                On-site restoration in <strong>Hurstville</strong>, <strong>Cronulla</strong>, <strong>Kogarah</strong>, and Bankstown.
+                            </div>
+                        </div>
+                        <p class="service-details__text">Note: For the best invisible result, we recommend a professional steam cleaning after the repair to ensure the pile direction and shading of the old and new areas align perfectly.</p>
+
+                        <h2 class="service-details__title wow fadeInUp">Frequently Asked Questions</h2>
+                        <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Will the repaired area look different?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">No. Because we use original fibers harvested from your own carpet, the color and texture match is 100%. Our hand-tufted reweaving blends seamlessly into the original pattern.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>How long does a carpet repair take?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">Most repairs in Sydney take between 1 to 2 hours depending on the size of the damage. We work efficiently to minimize disruption to your day.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix carpet burns from cigarettes or irons?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">Yes, burns are our specialty. We remove the melted fibers and re-insert fresh fibers, making the burn mark disappear completely. This is the perfect solution for Sydney renters.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Is this method better than carpet patching?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p class="inner__text">Absolutely. Traditional patching involves cutting out squares, which often leaves visible seams. Our hand-tufting method integrates with the carpet's original weave for a much more durable and invisible finish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-one" style="padding: 60px 0; background: #222; color: #fff; text-align: center;">
+        <div class="container">
+            <h2>Ready to Restore Your Carpet?</h2>
+            <p>Send a photo of your carpet damage to <strong>0452 288 855</strong> for a fast, free quote anywhere in Sydney!</p>
+            <a href="/contact" class="thm-btn" style="margin-top: 20px;">Get a Free Estimate</a>
+        </div>
+    </section>
+
+    <ProjectCarousel category="Carpet" />
+    <TestimonialsContact />
+    <Quote />
+    <Footer />
+</BaseLayout>

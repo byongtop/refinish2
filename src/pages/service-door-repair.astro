@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+const title = "Door & Window Frame Repair Sydney | Seamless On-Site Restoration";
+const description = "Specialist repair for doors and window frames in Sydney. We fix chips, scratches, and dents on timber, metal, and aluminum frames using advanced micro-blending—no full repainting required.";
+const keyword = "door repair Sydney, window frame restoration, aluminum window repair, timber door fix, sliding door track repair, chip repair frames, rental property repairs";
+---
+
+<BaseLayout {title} {description} {keyword}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-door-window.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Door & Window Surface Restoration</h1>
+                <p style="color: white; font-size: 1.2rem;">Flawless invisible repairs without the need for full-frame repainting.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Door & Window Repair</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-door-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-door-repair.jpg" alt="Professional door and window frame repair">
+                            </div>
+                            
+                            <h2 class="service-details__title wow fadeInUp">Precision Repairs for Frames & Panels</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Scratches on a powder-coated window frame or chips in a designer door often lead people to believe they need to repaint the entire unit. This is a common misconception. Our specialized techniques allow us to treat the <strong>specific damaged area only</strong>, matching the color and texture perfectly.
+                            </p>
+                            <p class="service-details__text wow fadeInUp">
+                                From modern aluminum sliding doors to traditional timber casement windows, we provide a fast, non-intrusive solution that returns your surfaces to their original, showroom condition.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">The Power of On-Site Color Matching</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Paint colors change over time due to UV exposure and age. A standard "off-the-shelf" touch-up pen will almost always stand out. We mix our pigments <strong>manually on-site</strong> to match the exact current shade of your frame, ensuring the repair is invisible under any lighting.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Materials We Service:</h3>
+                                    <ul class="list-unstyled service-details__list">
+                                        <li><i class="icon-check"></i> <strong>Powder-Coated Aluminum</strong></li>
+                                        <li><i class="icon-check"></i> <strong>Hardwood & Softwood Timber</strong></li>
+                                        <li><i class="icon-check"></i> <strong>UPVC & Composite Frames</strong></li>
+                                        <li><i class="icon-check"></i> <strong>MDF & Veneered Doors</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Common Damage We Fix:</h3>
+                                    <ul class="list-unstyled service-details__list">
+                                        <li><i class="icon-check"></i> <strong>Deep Dents & Impact Marks</strong></li>
+                                        <li><i class="icon-check"></i> <strong>Hardware Holes & Scratches</strong></li>
+                                        <li><i class="icon-check"></i> <strong>Pet Scratches on Door Panels</strong></li>
+                                        <li><i class="icon-check"></i> <strong>Weather-Related Finish Erosion</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Cost-Effective Alternative to Replacement</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Dust-Free & Minimal Disruption</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Perfect for End-of-Lease Compliance</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Durable, High-Impact Finishes</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-door-window-thumb.png" alt="Window frame restoration process">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Common Questions</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you match specific RAL or Dulux powder coat colors?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. While we can use standard color codes as a base, we always fine-tune the mix by hand to account for any sun-fading or age-related color shifts on your specific windows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>My door has a complex wood grain, can you fix a chip in it?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Certainly. We use artist brushes to reconstruct the wood grain pattern over the repair, matching the surrounding timber for a seamless result.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>Is the repair waterproof for exterior frames?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. We use UV-stable and weather-resistant resins and coatings designed specifically for the harsh Australian climate, ensuring long-lasting protection.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Door" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

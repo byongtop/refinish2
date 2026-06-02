@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+// SEO 优化：加入 Sydney 和具体材质关键词
+const title = "Kitchen Benchtop Repair Sydney | Fix Scratches, Chips & Stains";
+const description = "Professional kitchen benchtop repair in Sydney. We fix chips, scratches & stains on stone, marble and laminate tops. Fast on-site restoration without replacement. Get a free quote!";
+const keyword = "benchtop repair Sydney, kitchen countertop restoration, laminate benchtop fix, timber benchtop scratch repair, acrylic surface repair, Sydney benchtop chip repair, stain removal kitchen";
+---
+
+<BaseLayout {title} {description} {keyword}>
+<script type="application/ld+json" slot="header">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you repair chips in engineered stone like Caesarstone or Quantum Quartz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We specialize in stone chip repairs using high-grade UV-stable resins. Unlike basic fillers, we manually color-match and recreate the stone's unique speckle or vein pattern, ensuring the repair is structurally sound and virtually invisible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a benchtop repair heat resistant and safe for food preparation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. At Refinish, we use industrial-grade, non-toxic materials that are safe for kitchen environments. Once cured, our repairs are moisture-resistant and designed to withstand the typical temperature fluctuations of a busy Sydney kitchen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you fix burn marks or deep scratches on laminate benchtops?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we can. For laminate and Formica, we remove the damaged area and use a precision-filling technique combined with hand-painted grain matching. This avoids the high cost and mess of a full kitchen strip-out, making it the perfect solution for bond returns or home refreshes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical benchtop restoration take in Sydney?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most on-site repairs are completed within 1 to 3 hours. Since we use fast-curing technology, you can typically use your kitchen benchtop again the same day, saving you the weeks of downtime associated with replacement."
+          }
+        }
+      ]
+    }
+    </script>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-service-benchtop-repair.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Professional Kitchen Benchtop Repair Sydney</h1>
+                <p style="color: white; font-size: 1.2rem;">Don't Replace It—Restore Your Surface to Like-New Condition Today</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Benchtop Repair Sydney</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-benchtop-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-benchtop-repair.jpg" alt="Benchtop Scratch and Chip Repair Service Sydney">
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Fast, Efficient & Cost-Saving Benchtop Restoration in Sydney</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Replacing a kitchen benchtop is a major renovation that involves plumbing, tiling, and high costs. At <strong>Refinish</strong>, we offer a smarter alternative: <strong>professional on-site benchtop repairs across Sydney</strong>. Our specialized techniques allow us to fix surface damage in hours, not days, saving you up to 80% compared to the cost of a full replacement.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">We Repair All Types of Benchtop Materials</h2>
+                            <p class="service-details__text wow fadeInUp">Different surfaces require unique chemical compounds and artistic skills. Our Sydney team is trained in:</p>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;">Laminate & Formica</h4>
+                                    <p class="text-small">We can fix chips, burns, and swelling edges on laminate surfaces using precision-matched resins that restore the pattern and durability.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;">Solid Timber</h4>
+                                    <p class="text-small">From deep scratches to water stains, we sand, fill, and re-seal timber tops to preserve their natural warmth and grain.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;">Acrylic & Corian</h4>
+                                    <p class="text-small">Our seamless joining and buffing techniques make cracks and scratches in acrylic surfaces completely disappear.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;">Engineered & Natural Stone</h4>
+                                    <p class="text-small">Focusing on chip repair and crack stabilization for Caesarstone, Marble, and Granite kitchen islands.</p>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Our Technical Advantage: Invisible Precision</h2>
+                            <p class="service-details__text">What sets Refinish apart in the Sydney market is our attention to detail:</p>
+                            <ul class="service-details__text">
+                                <li><strong>Hand-Finished Patterns:</strong> We don't just use flat colours; we hand-draw the stone veins or laminate textures to ensure a perfect blend.</li>
+                                <li><strong>UV-Stable Coatings:</strong> Our repairs won't yellow or fade over time, even in sunlit Sydney kitchens.</li>
+                                <li><strong>Industrial Grade Strength:</strong> We use structural fillers that can withstand the heat and moisture of a busy kitchen.</li>
+                            </ul>
+
+                            <h2 class="service-details__title wow fadeInUp">What Damages Can We Fix?</h2>
+                            <p class="service-details__text wow fadeInUp">Whether it's an accident during a party or years of wear and tear, we can help with:</p>
+                            <ul>
+                                <li><strong>Knife Scratches:</strong> Deep cuts from food preparation.</li>
+                                <li><strong>Heat Burns:</strong> Scorched marks from hot pots or pans.</li>
+                                <li><strong>Edge Chips:</strong> Pieces knocked off around the sink or dishwasher.</li>
+                                <li><strong>Chemical Stains:</strong> Discolouration from harsh cleaners or spilled wine.</li>
+                            </ul>
+
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Completed in 1-3 hours.</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">No mess, no dust, no plumbing.</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Perfect for rental bond returns.</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">100% Satisfaction Guarantee.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-1-9.png" alt="Sydney Kitchen Surface Restoration Specialist">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">On-Site Repairs Across All Sydney Regions</h2>
+                            <p class="service-details__text">Our mobile repair vans are fully equipped to serve you at your home or office in:</p>
+                            <div class="row" style="background: #f4f4f4; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+                                <div class="col-md-4 text-small"><strong>Sydney CBD & Inner West</strong></div>
+                                <div class="col-md-4 text-small"><strong>North Shore & Northern Beaches</strong></div>
+                                <div class="col-md-4 text-small"><strong>Western Sydney & Hills District</strong></div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Benchtop Repair FAQs</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix a burn mark on a laminate benchtop?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes! We remove the scorched material, fill it with a matching compound, and hand-paint the laminate pattern back on. It's a common request for Sydney tenants moving out.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Is the repair heat resistant?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Our repairs are durable and can handle normal kitchen use. However, like any benchtop, we always recommend using a trivet for hot pots directly from the stove.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>How do I get an estimate?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">The easiest way is to text a photo of the damage to <strong>0452 288 855</strong>. We can usually give you a fixed price quote within 1 hour.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Benchtop" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

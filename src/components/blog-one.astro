@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+
+const blogPosts = await getCollection('blog');
+
+// 取最新三篇文章（按 date 降序）
+const latestThree = blogPosts
+  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+  .slice(0, 3);
+---
+        <section class="blog-one blog-one--home">
+            <div class="blog-one__bg" style="background-image: url(/assets/images/shapes/blog-bg-1-1.jpg);"></div>
+            <div class="container">
+                <div class="sec-title text-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="sec-title__image" src="/assets/images/shapes/sec-title-s-1.png" alt="refinish image">
+                        <h6 class="sec-title__tagline bw-split-in-right">latest blog</h6>
+                    </div>
+                    <h3 class="sec-title__title bw-split-in-up">Our Latest Blog & News</h3>
+                </div>
+                <div class="row gutter-y-30">
+
+                    {latestThree.map(post => (
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-card wow fadeInUp blog-card--two" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                            <div class="blog-card__image">
+                                <img src={post.data.listImage} alt={post.data.title}>
+                                <a href={`/blog/${post.slug}/`} class="blog-card__image__item">
+                                    <div class="blog-card__hover__box blog-card__hover__box--1"></div>
+                                    <div class="blog-card__hover__box blog-card__hover__box--2"></div>
+                                    <div class="blog-card__hover__box blog-card__hover__box--3"></div>
+                                    <div class="blog-card__hover__box blog-card__hover__box--4"></div>
+                                </a>
+                            </div>
+                            <div class="blog-card__content">
+                                <h3 class="blog-card__title"><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
+                                <ul class="blog-card__meta list-unstyled">
+                                    <li class="blog-card__meta__item"><i class="icon-user"></i>{post.data.author}</li>
+                                </ul>
+                                <div class="blog-card__date"><span class="blog-card__date__day">20</span> <span class="blog-card__date__month">June</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    ))}
+
+                </div>
+            </div>
+            <div class="blog-one__shape">
+                <img src="/assets/images/shapes/spiral-1.png" alt>
+            </div>
+            <div class="blog-one__shape-two">
+                <img src="/assets/images/shapes/spiral-2.png" alt>
+            </div>
+        </section>

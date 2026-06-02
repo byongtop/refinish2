@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+const title = "Skirting Board & Baseboard Repair Sydney | Seamless Restoration";
+const description = "Professional skirting board repairs in Sydney. We fix chips, scratches, pet damage, and water-swelled baseboards with precision on-site colour matching. No replacement needed!";
+const keyword = "skirting board repair Sydney, baseboard repair, fix pet damage skirting, swollen skirting repair, chipped baseboard fix, seamless skirting touch up";
+---
+
+<BaseLayout {title} {description} {keyword}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-skirting.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Skirting Board Restoration</h1>
+                <p style="color: white; font-size: 1.2rem;">Don't Replace It—Repair It Seamlessly With Our On-Site Refinishing.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Skirting Board Repair</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-skirtingboard-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-skb-repair.jpg" alt="Skirting Board and Baseboard Surface Repair">
+                            </div>
+                            
+                            <h2 class="service-details__title wow fadeInUp">Why Repairing Skirting Boards Matters</h2>
+                            
+                            <p class="service-details__text wow fadeInUp" style="font-weight: 500; color: #333;">
+                                Refinish provides professional <strong>skirting board repairs in Sydney</strong>, offering a seamless alternative to costly replacements. We specialize in fixing chips, scratches, pet damage, and water-swelled baseboards with precision on-site colour matching.
+                            </p>
+
+                            <p class="service-details__text wow fadeInUp">
+                                Skirting boards (baseboards) are the most abused surfaces in any home. Vacuum cleaners bump them, pets scratch them, and furniture leaves deep dents. In bathrooms and kitchens, moisture often causes modern MDF boards to swell and bubble.
+                            </p>
+                            <p class="service-details__text wow fadeInUp">
+                                <strong>The Refinish Advantage:</strong> Most tradesmen will tell you to replace the entire board. This involves tearing it off the wall, damaging the plaster, and purchasing expensive new materials. We provide a <strong>surgical repair</strong>—fixing only the damaged spot while the board stays on the wall.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">Our Precision Restoration Method</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                We combine structural rebuilding with artistic refinishing to make damage disappear:
+                            </p>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Surface Re-Profiling</h4>
+                                    <p class="text-small">For crushed corners or decorative profiles, we rebuild the shape using hard-wearing compounds that dry harder than wood.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> On-Site Colour Lab</h4>
+                                    <p class="text-small">We match the exact shade and gloss level (Matte, Satin, or Gloss) of your existing trim so the repair is invisible.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Swelling Remediation</h4>
+                                    <p class="text-small">We can often treat and flatten moisture-damaged MDF skirtings, saving you from a major renovation.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Pet Damage Fix</h4>
+                                    <p class="text-small">Chewed corners or deep scratches from cats and dogs are fully restored to their original smooth finish.</p>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">What We Repair</h2>
+                            <ul class="wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <li><strong>Chips & Dents:</strong> From vacuum cleaners or moving furniture.</li>
+                                <li><strong>Pet Damage:</strong> Restoring corners chewed or scratched by dogs and cats.</li>
+                                <li><strong>Water Swelling:</strong> Repairing bubbled MDF skirting in wet areas.</li>
+                                <li><strong>Gap Filling:</strong> Sealing unsightly gaps between the skirting and the floor/wall.</li>
+                                <li><strong>Paint Failures:</strong> Fixing peeling, flaking, or yellowed paint sections.</li>
+                            </ul>
+
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Invisible Colour Matching</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">No Wall Damage (In-place repair)</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Durable, Impact-Resistant Finish</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Completed in hours, not days</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-skirting-thumb.png" alt="Skirting board profile repair">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Skirting Repair FAQs</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you repair the decorative curves on my skirting?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. We specialize in "re-profiling." We manually rebuild the curves and lines of your skirting to match the original design perfectly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Is it cheaper than replacing the skirting?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">In most cases, yes. When you factor in the cost of new materials, carpentry labour, and repainting the entire room, our localized repair is significantly more cost-effective.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>What if my skirting is swollen from water?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">If the MDF is bubbled, we sand back the affected area, treat it to prevent further expansion, fill it with a waterproof compound, and refinish it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Skirtingboard" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+// SEO 优化策略：
+// 1. 标题包含：核心服务 + 地域 + 核心卖点
+// 2. 描述包含：痛点（Holes/Cracks）+ 解决方案（On-site matching）+ 结果（Save money）
+const title = "Gyprock & Wall Repair Sydney | Invisible Patching & Colour Match";
+const description = "Sydney's experts in seamless Gyprock repair. We fix wall holes, cracks, and dents with precision on-site colour matching. Perfect for end-of-lease bond recovery without repainting the entire wall.";
+const keyword = "Gyprock repair Sydney, wall hole repair, plasterboard repairs, fix cracks in wall, seamless wall patching, paint touch up Sydney, end of lease wall repair Sydney, plasterer Sydney, invisible wall mending";
+---
+
+<BaseLayout {title} {description} {keyword}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-wall-repair.jpg);" role="img" aria-label="Professional Gyprock wall repair service"></div>
+            <div class="container">
+                <h1 class="page-header__title">Gyprock & Wall Repair Sydney</h1>
+                <p style="color: white; font-size: 1.2rem; font-weight: 500;">Invisible Patching & Seamless Colour Matching for a Flawless Finish.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Gyprock & Plasterboard Repair</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-wall-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-wall-repair.jpg" alt="Professional Gyprock Hole and Plasterboard Crack Repair in Sydney">
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Seamless Plasterboard Restoration Without Full Repainting</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Whether it’s a <strong>doorknob hole</strong>, a <strong>crack from house settling</strong>, or damage from removing <strong>sticky hooks</strong>, you don't need to repaint the entire room. Traditional painters in Sydney often insist on painting wall-to-wall to avoid "patchiness." <strong>We do things differently.</strong>
+                            </p>
+                            <p class="service-details__text wow fadeInUp">
+                                At <strong>Refinish</strong>, our specialty is <strong>spot repair (invisible patching)</strong>. We fix the physical damage and then use advanced <strong>on-site colour matching technology</strong> to blend the new finish into your existing paint—even if it has faded over time.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">Why Choose Our Invisible Gyprock Repair?</h2>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> On-Site Colour Lab</h4>
+                                    <p class="text-small">We don't use "off-the-shelf" colours. We mix pigments on the spot to account for your wall's unique aging, sheen (gloss level), and lighting.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Feather-Edge Blending</h4>
+                                    <p class="text-small">Our specialized spray and brush techniques ensure there are no hard lines or "halo effects" around the repaired plaster area.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Dust-Free Sanding Process</h4>
+                                    <p class="text-small">We use HEPA-filtered sanding equipment to ensure your home stays clean while we work on your <strong>plasterboard repairs</strong>.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 style="color: #c4956a;"><i class="icon-check"></i> Structural Patching</h4>
+                                    <p class="text-small">For larger <strong>Gyprock holes</strong>, we reinforce the backing to ensure the patch is as strong as the original wall structure.</p>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Common Interior Wall Issues We Fix</h2>
+                            <p class="service-details__text">As Sydney's wall restoration specialists, we restore interior surfaces to "like-new" condition:</p>
+                            <ul class="service-details__text">
+                                <li><strong>Holes & Dents:</strong> Fixing damage from furniture, door handles, or moving day mishaps.</li>
+                                <li><strong>End-of-Lease Repairs:</strong> Specialist in removing scuffs, stains, and nail holes to ensure you <strong>get your bond back</strong>.</li>
+                                <li><strong>Settlement Crack Restoration:</strong> Professional repair for ceiling and wall cracks in <strong>plaster and Gyprock</strong>.</li>
+                                <li><strong>Paint & Adhesive Damage:</strong> Fixing peeling paint or surface damage caused by 3M hooks, adhesive tape, and wallpaper removal.</li>
+                            </ul>
+
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Exact colour & sheen match</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Fast drying & low odour</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Cheaper than full repainting</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Residential & Commercial Sydney</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-wall-thumb.png" alt="Seamless Gyprock Patching Service Sydney">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Frequently Asked Questions</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Will I see the difference between the old and new paint?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Our goal is an invisible finish. By matching both the <strong>colour and the "sheen" (gloss level)</strong> of your existing wall, the repair becomes virtually undetectable to the naked eye.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix holes from wall-mounted TVs?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. We specialize in <strong>TV mount hole repairs</strong>. We fill the bolt holes, sand them flush, and colour-match the paint so the wall looks like it never had a bracket installed—perfect for rental inspections.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>What if I don't have the original paint?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">No problem. We don't need the original paint cans or codes. Our technicians carry a <strong>mobile paint lab</strong> to match the colour on-site, accounting for any fading that has occurred over time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Wall" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

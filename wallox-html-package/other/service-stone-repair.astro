@@ -1,0 +1,161 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+
+const title = "Restore Your Stone Surfaces to Perfection Without Replacement!";
+const description = "Professional stone benchtop chip and crack repair in Sydney. We restore marble, Caesarstone and engineered stone with invisible finishes. Fast, mobile and affordable.";
+const keyword = "stone repair, marble restoration, granite repair, chip repair, scratch repair, color-matched stone filler, cost-effective repair, fast restoration, warranty";
+---
+
+<BaseLayout {title} {description}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-service-stone-repair.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Stone Benchtop Chip Repair & Crack Restoration in Sydney</h1>
+                <p>Expert Handcrafted Stone Repairs for Seamless Results</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services details</span></li>
+                        <li><span>Stone Repair</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-stone-repair.jpg" alt="Quality Stone Repair">
+                            </div>
+                            <h2 class="service-details__title wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>Our Stone Repair Philosophy:Precision, Efficiency, and Cost-Saving</h2>
+                            <p class="service-details__text wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>Replacing damaged stone surfaces is expensive, time-consuming, and disruptive. Our repair method restores chips, scratches, cracks, and worn areas without removing the stone. Using expertly color-matched stone adhesive, we seamlessly fill damaged areas, saving time, effort, and cost while preserving the integrity of your surfaces.</p>
+                            <h2 class="service-details__title wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>Our Technical Advantage</h2>
+                            <p>High-Skill Stone Adhesive Color Matching</p>
+                            <p class="service-details__text wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>Each repair requires mixing custom-colored stone adhesive to perfectly match the original marble, granite, or engineered stone. The repair is shaped and polished by hand to recreate natural patterns and textures. Unlike paint, stone adhesive integrates with the material, providing a durable, seamless, and virtually invisible restoration. This method demands more skill but delivers lasting, high-quality results.</p>
+                            <h2 class="service-details__title wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>What We Can Restore</h2>
+                            <p>Chips, Scratches, Cracks, Surface Wear—All Covered</p>
+                            <p class="service-details__text wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>We repair all types of stone surfaces in kitchens, bathrooms, floors, and feature areas. Common repairs include:</p>
+                            <ul>
+                                <li>Minor or deep scratches</li>
+                                <li>Chips or broken edges</li>
+                                <li>Cracks or fissures</li>
+                                <li>Worn or dull surfaces</li>
+                            </ul>
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon">
+                                                        <i class="icon-check"></i>
+                                                    </div>
+                                                    <span class="service-details__list__text">Fast & Efficient</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon">
+                                                        <i class="icon-check"></i>
+                                                    </div>
+                                                    <span class="service-details__list__text">Cost-Effective</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon">
+                                                        <i class="icon-check"></i>
+                                                    </div>
+                                                    <span class="service-details__list__text">Highly Skilled Craftsmanship</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon">
+                                                        <i class="icon-check"></i>
+                                                    </div>
+                                                    <span class="service-details__list__text">Warranty Provided</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-1-9.png" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="service-details__title wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>Where can I get some?</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Will the repaired area match my stone’s original color?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes, our custom-colored stone adhesive is mixed to match your surface perfectly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>How durable is the repair?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Stone adhesive repairs are extremely durable and long-lasting, designed for normal household or commercial use.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>Do you need to remove the stone surface for repair?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Usually not. Repairs are done in place to minimize disruption.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>Can all stone types be repaired?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">We work with marble, granite, engineered stone, and other natural stone surfaces. Rare or specialty stones are evaluated individually.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>Is this method better than replacing the stone?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">For localized damage, yes—much faster, more affordable, and preserves the original stone without the cost and hassle of replacement.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel />
+
+        <TestimonialsContact />
+
+      <Footer />
+
+</BaseLayout>

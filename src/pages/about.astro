@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AboutOne from '../components/about-one.astro';
+import WhyChooseOne from '../components/why-choose-one.astro';
+
+const title = "About Surface Refinish | Australia's Leading Surface Restoration Specialists";
+const description = "Refinish provides invisible, on-site repairs for floors, benchtops, stone, and walls across Australia. Expert restoration for leather, furniture, tiles, and more. Seamless results with precision color matching.";
+---
+<BaseLayout {title} {description}>
+
+    <Header />
+    <section class="page-header">
+        <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+        <div class="container">
+            <h1 class="page-header__title">Surface Refinish: Premium On-Site Restoration Services</h1>
+            <div class="wallox-breadcrumb">
+                <ul class="wallox-breadcrumb__list list-unstyled">
+                    <li><a href="index/"><i class="icon-home"></i> Home</a></li>
+                    <li><span>About</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <AboutOne />
+    <WhyChooseOne />
+    <Footer />
+
+</BaseLayout>

@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Our Projects | Surface Restoration Before & After";
+const description = "Explore our completed repair projects for floors, furniture, benchtops, stone, tiles, walls, doors, leather, and more. See how we restore damaged surfaces to flawless condition.";
+
+// 获取所有案例
+const projects = await getCollection('projects'); 
+---
+
+<BaseLayout {title} {description}>
+    <Header />
+
+    <section class="project-page">
+        <div class="container">
+            <div class="row gutter-y-20 gutter-x-20">
+                {projects.map(project => (
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-card wow fadeInUp" data-wow-duration='00ms' data-wow-delay='00ms'>
+                            <div class="project-card__thumb">
+                                <img src={project.data.listImage} alt={project.data.pageTitle}>
+                            </div>
+                            <div class="project-card__content">
+                                <div class="project-card__content__inner">
+                                    <span class="project-card__content__subtitle">
+                                        {project.data.categories && project.data.categories[0] ? project.data.categories[0] : 'Restoration'}
+                                    </span>
+                                    
+                                    <h4 class="project-card__content__title">
+                                        <a href={`/projects/${project.slug}/`}>{project.data.pageTitle}</a>
+                                    </h4>
+                                </div>
+                                <a href={`/projects/${project.slug}/`} class="project-card__content__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </section>
+    <Footer />
+</BaseLayout>

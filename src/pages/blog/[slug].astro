@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+
+const slug = Astro.params.slug;
+
+// 告诉 Astro 所有博客的动态路由
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+  }));
+}
+
+// 获取当前文章内容
+const post = await getCollection('blog').then(posts => posts.find(p => p.slug === slug));
+
+if (!post) {
+  throw new Error(`Blog post not found: ${slug}`);
+}
+
+// 重点：调用 post.render() 获取渲染后的内容
+const { Content, headings, remarkPluginFrontmatter, html } = await post.render();
+
+const title = post.data.title;
+const description = post.data.description;
+---
+
+<BaseLayout {title} {description}>
+
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+            <div class="container">
+                <h2 class="page-header__title">{post.data.title}</h2>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>blog standard</span></li>
+                        <li><span>{post.data.title}</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-one blog-one--page">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="blog-details">
+                            <div class="blog-card-two">
+                                <div class="blog-card-two__image wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='500ms'>
+                                    <div class="blog-card-two__image__item">
+                                        <img src={post.data.mainImage} alt={post.data.title}>
+                                    </div>
+                                    <div class="blog-card-two__date"><span class="blog-card-two__date__day">20</span> <span class="blog-card-two__date__month">June</span></div>
+                                </div>
+                                <div class="blog-card-two__content blog-card-two__content--two">
+                                    <div class="blog-card-two__text wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='500ms'> 
+                                        <Content />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-details__meta wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='500ms'>
+                                <div class="blog-details__cetagoris">
+                                    <h4 class="blog-details__cetagoris__title">categories:</h4>
+                                    <div class="sidebar__cetagoris">
+                                        <a href="blog-list-right/">personal loan</a>
+                                        <a href="blog-list-right/">business loan</a>
+                                    </div>
+                                </div>
+                                <div class="blog-details__tags">
+                                    <h4 class="blog-details__tags__title">tags:</h4>
+                                    <div class="sidebar__tags">
+                                        <a href="blog-list-right/">auto loan</a>
+                                        <span>,</span>
+                                        <a href="blog-list-right/">home loan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <Footer />
+
+</BaseLayout>

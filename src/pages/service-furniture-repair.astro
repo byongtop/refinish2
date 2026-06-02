@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+const title = "Furniture Repair & Wood Restoration Sydney | Invisible Repairs";
+const description = "Professional furniture restoration in Sydney. We fix scratches, heat marks, and dents on tables, cabinets, and antiques using master-level hand-painted grain techniques.";
+const keyword = "furniture repair Sydney, wood furniture restoration, fix table scratches, heat mark removal, antique furniture repair, hand painted wood grain, cabinet repair";
+---
+
+<BaseLayout {title} {description} {keyword}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-service-furniture.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Fine Furniture Restoration</h1>
+                <p style="color: white; font-size: 1.2rem;">Artisanal Repairs for Your Cherished Timber and Modern Pieces.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Furniture Repair</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-furniture-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-furniture-repair.jpg" alt="Master furniture repair and restoration">
+                            </div>
+                            
+                            <h2 class="service-details__title wow fadeInUp">Preserve the Character, Erase the Damage</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Whether it’s a high-end designer dining table, a family heirloom, or modern office cabinetry, damage like deep scratches, heat rings, and water marks can be heartbreaking. Replacing a quality piece of furniture is not only expensive but often unnecessary.
+                            </p>
+                            <p class="service-details__text wow fadeInUp">
+                                Our philosophy is <strong>"Restore, Don't Replace."</strong> We specialize in localized surface repairs that maintain the original patina and finish of your furniture, avoiding the soul-less look of a full machine-sand and spray.
+                            </p>
+
+                            <h2 class="service-details__title wow fadeInUp">The Art of Hand-Painted Wood Grain</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                What sets our furniture repair apart is our mastery of <strong>optical illusion</strong>. For timber furniture, simply filling a hole isn't enough—it leaves a flat, ugly spot. 
+                            </p>
+                            <div class="service-details__text wow fadeInUp" style="background: #f9f9f9; padding: 20px; border-left: 4px solid #c4956a;">
+                                <p><strong>How we do it:</strong> We meticulously hand-paint the individual wood grain lines and "fleck" patterns back onto the repaired area. By layering translucent colours and matching the surrounding "chatoyancy" (the way wood reflects light), we make the damage virtually disappear.</p>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Common Issues We Resolve</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled service-details__list">
+                                        <li><i class="icon-check"></i> <strong>Heat & Water Rings:</strong> Removing white cloudy marks on tabletops.</li>
+                                        <li><i class="icon-check"></i> <strong>Deep Gouges:</strong> Filling and grain-matching deep wood damage.</li>
+                                        <li><i class="icon-check"></i> <strong>Corner & Edge Repair:</strong> Rebuilding crushed edges on cabinets.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled service-details__list">
+                                        <li><i class="icon-check"></i> <strong>Pet Damage:</strong> Fixing chew marks on chair legs.</li>
+                                        <li><i class="icon-check"></i> <strong>Veneer Repair:</strong> Fixing chipped or lifting wood veneer.</li>
+                                        <li><i class="icon-check"></i> <strong>Finish Wear:</strong> Restoring worn areas around handles.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-details__feature">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Precise Colour & Grain Match</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">On-site Repair (No transport risk)</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Eco-Friendly (Less landfill)</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text">Specialists in Hardwood & Veneer</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-furniture-thumb.png" alt="Furniture wood grain detailing">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Furniture Repair FAQs</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Do I need to send my furniture to a workshop?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">In 90% of cases, no. We perform our magic right in your home or office. This saves you expensive removalist fees and the risk of damage during transport.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix "White Marks" from hot coffee cups or pizza boxes?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. These are usually trapped moisture in the lacquer. We use specific techniques to draw out the moisture or refinish the localized area to clear the mark.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>Is the repair durable for everyday use?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Absolutely. We use professional-grade resins and hard-wearing top coats that are designed to withstand the heat and spills of a functional dining table.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Furniture" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

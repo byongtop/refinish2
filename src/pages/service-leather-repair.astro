@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialsContact from '../components/testimonials-contact.astro';
+import ServiceDetailLeft from '../components/service_detail_left.astro';
+import ProjectCarousel from '../components/project-carousel.astro';
+import Quote from '../components/quote-request.astro';
+
+const title = "Premium Leather Repair & Restoration Sydney | Sofa & Car Seat Specialist";
+const description = "Professional leather restoration for luxury sofas, car interiors, and upholstery. We fix scratches, scuffs, fading, and cracks with custom color matching and flexible, natural-finish coatings.";
+const keywords = "leather repair Sydney, leather sofa restoration, car seat leather repair, leather scratch repair, leather colour matching, luxury upholstery repair, leather crack fix";
+---
+
+<BaseLayout {title} {description} {keywords}>
+    <Header />
+    <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-leather.jpg);"></div>
+            <div class="container">
+                <h1 class="page-header__title">Leather Surface Restoration</h1>
+                <p style="color: white; font-size: 1.2rem;">Artisanal repair techniques to restore the soul of your premium leather investment.</p>
+                <div class="wallox-breadcrumb">
+                    <ul class="wallox-breadcrumb__list list-unstyled">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><span>Services</span></li>
+                        <li><span>Leather Restoration</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <ServiceDetailLeft activeHref="/service-leather-repair/" />
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                <img src="/assets/images/service/service-detail-leather-repair.jpg" alt="Professional leather sofa and car seat restoration">
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Revitalise Your Leather Without the Cost of Re-upholstery</h2>
+                            <p class="service-details__text wow fadeInUp">
+                                Premium leather is an investment that matures over time, but everyday use can lead to unsightly <strong>scuffs, fading, and cracks</strong>. Many owners believe that once the surface is damaged, the only options are expensive re-upholstery or replacement.
+                            </p>
+                            <p class="service-details__text wow fadeInUp">
+                                Our restoration process is different. We don't just "paint over" the damage. We use <strong>advanced flexible binders and custom-pigmented coatings</strong> to rebuild the leather’s surface. The result is a repair that moves with the material, maintaining the soft, luxurious feel of original leather while looking virtually brand new.
+                            </p>
+
+                            <h3 class="service-details__title wow fadeInUp" style="font-size: 1.8rem; margin-top: 40px;">Specialised Leather Services</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div style="background: #f9f9f9; padding: 20px; border-left: 4px solid #cc3344; margin-bottom: 20px;">
+                                        <h4 style="color: #333; margin-bottom: 10px;">Residential & Luxury Decor</h4>
+                                        <ul class="list-unstyled service-details__list" style="margin: 0;">
+                                            <li><i class="icon-check"></i> Designer Sofas & Lounges</li>
+                                            <li><i class="icon-check"></i> Leather Bedheads & Ottomans</li>
+                                            <li><i class="icon-check"></i> Dining Chair Restoration</li>
+                                            <li><i class="icon-check"></i> Scuff & Pet Scratch Repair</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="background: #f9f9f9; padding: 20px; border-left: 4px solid #cc3344; margin-bottom: 20px;">
+                                        <h4 style="color: #333; margin-bottom: 10px;">Automotive Excellence</h4>
+                                        <ul class="list-unstyled service-details__list" style="margin: 0;">
+                                            <li><i class="icon-check"></i> Car Seat Bolster Repair</li>
+                                            <li><i class="icon-check"></i> Steering Wheel Restoration</li>
+                                            <li><i class="icon-check"></i> Door Panel & Trim Refurbishment</li>
+                                            <li><i class="icon-check"></i> Classic Car Interior Refresh</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service-details__feature" style="margin-top: 30px;">
+                                <div class="row wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__left">
+                                            <h3 class="service-details__title" style="font-size: 1.6rem;">Why Our Method Works</h3>
+                                            <ul class="service-details__list list-unstyled">
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text"><strong>Bespoke Colour Matching:</strong> Mixed onsite for every job.</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text"><strong>Breathable Finishes:</strong> Prevents cracking and peeling.</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text"><strong>Flex-Bond Technology:</strong> Moves with the leather.</span>
+                                                </li>
+                                                <li class="service-details__list__item">
+                                                    <div class="service-details__list__icon"><i class="icon-check"></i></div>
+                                                    <span class="service-details__list__text"><strong>OEM Standards:</strong> Factory-level durability and sheen.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-details__right">
+                                            <div class="service-details__thumb">
+                                                <img src="/assets/images/service/service-detail-leather-2.jpg" alt="Leather colour matching and repair process">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="service-details__title wow fadeInUp">Common Leather Repair Questions</h2>
+                            <div class="faq-page__accordion wallox-accrodion wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms' data-grp-name="wallox-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Can you fix deep scratches from pets?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Yes. We use specialised leather fillers to smooth out the "burrs" caused by claws, then recreate the surface grain and colour to blend it away.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"><span class="accrodion-title__icon"></span>Will the paint rub off on my clothes?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">Absolutely not. We use professional-grade automotive and upholstery leather coatings that are sealed with a top-coat (finisher). Once cured, it is as durable as the original factory finish.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="accrodion-title__text"> <span class="accrodion-title__icon"></span>How do I maintain the leather after repair?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p class="inner__text">We recommend waiting 48 hours before heavy use. After that, simply clean with a damp microfibre cloth and avoid harsh chemical cleaners which can strip the protective top-coat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ProjectCarousel category="Leather" />
+        <TestimonialsContact />
+        <Quote />
+      <Footer />
+</BaseLayout>

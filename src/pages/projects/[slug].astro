@@ -1,0 +1,175 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+
+// 生成静态路径（必需）
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  // 确保 slug 使用了正确的替换逻辑，匹配 .md/.mdx 文件名
+  return projects.map((project) => ({
+    // 使用 project.slug 是 Astro 推荐的做法，但如果您的文件名包含扩展名且需要删除，
+    // 您可以继续使用您原始的逻辑：project.id.replace(/\.mdx?$/, '')
+    params: { slug: project.slug }, 
+  }));
+}
+
+const slug = Astro.params.slug;
+const projects = await getCollection('projects');
+// 查找项目时，使用 project.slug 而不是 project.id.replace
+const project = projects.find(
+  (p) => p.slug === slug
+);
+
+if (!project) {
+  throw new Error(`Project not found: ${slug}`);
+}
+
+const { Content } = await project.render();
+
+const title = project.data.seoTitle || project.data.pageTitle;
+const description = project.data.seoDescription || project.data.description;
+
+// 辅助函数，用于格式化 z.date() 字段
+function formatDate(date) {
+  if (!(date instanceof Date)) {
+    // 处理 date 字段为可选或未正确解析的情况
+    return "N/A"; 
+  }
+  // 示例格式：November 20, 2025
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+// ✅ 日期格式：20/11/2025（带 0 补齐）
+function formatDate(date) {
+  if (!(date instanceof Date)) {
+    return "N/A";
+  }
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  });
+}
+
+---
+
+<BaseLayout {title} {description}>
+
+    <Header />
+    
+    <section class="page-header">
+        <div class="page-header__bg" style={`background-image: url(${project.data.listImage});`}></div>
+        <div class="container">
+            <h1 class="page-header__title">{project.data.pageTitle}</h1>
+            <div class="wallox-breadcrumb">
+                <ul class="wallox-breadcrumb__list list-unstyled">
+                    <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                    <li><span>Our project</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="project-details__top__thumb real-image">
+                        <img src={project.data.mainImage} alt={project.data.title}>
+                    </div>
+                    
+                    <div class="project-details__category">
+                        <div class="project-details__category__item">
+                            <span class="project-details__category__subtitle">Clients:</span>
+                            <div class="project-details__category__title">{project.data.client || 'Real Estate Agency'}</div> 
+                        </div>
+                        <div class="project-details__category__item">
+                            <span class="project-details__category__subtitle">Category:</span>
+                            <div class="project-details__category__title">{project.data.categories.join(", ")}</div>
+                        </div>
+                        <div class="project-details__category__item">
+                            <span class="project-details__category__subtitle">Services:</span>
+                            <div class="project-details__category__title">{project.data.services.join(", ")}</div>
+                        </div>
+                        <div class="project-details__category__item">
+                            <span class="project-details__category__subtitle">Date:</span>
+                            <div class="project-details__category__title">{formatDate(project.data.date)}</div> 
+                        </div>
+                    </div>
+                    
+                    {project.data.valueProposition && (
+                    <div class="project-details__info">
+                        <h2 class="project-details__title">{project.data.valueProposition.title}</h2>
+                        {project.data.valueProposition.text.map(text => (
+                            <p class="project-details__text" set:html={text} />
+                        ))}
+                    </div>
+                    )}
+                    
+                    <div class="project-details__quality">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="project-details__quality__left">
+                                    <h2 class="project-details__title">{project.data.risk.title}</h2> 
+                                    {project.data.risk.description && (
+                                      <p class="project-details__text">{project.data.risk.description}</p>
+                                    )}
+                                    <ul class="project-details__quality__list list-unstyled">
+                                    {project.data.risk.list.map(item => ( 
+                                        <li class="project-details__quality__item"><i class="icon-check"></i> {item}</li>
+                                    ))}
+                                    </ul>
+                                </div>
+                            </div>
+                            {project.data.extraImage && (
+                            <div class="col-md-6">
+                                <div class="project-details__quality__thumb real-image">
+                                    <img src={project.data.extraImage} alt={project.data.risk.title}>
+                                </div>
+                            </div>
+                            )}
+                        </div>
+                    </div>
+                    
+                    {project.data.restorationProcess && (
+                    <div class="project-details__management">
+                        <h2 class="project-details__title">{project.data.restorationProcess.title}</h2> 
+                        {project.data.restorationProcess.text.map(text => ( 
+                            <p class="project-details__text" set:html={text} />
+                        ))}
+                    </div>
+                    )}
+                    <br/>
+                    
+                    <Content /> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-one">
+        <div class="container">
+            <div class="row masonry-layout">
+                {project.data.images.map(img => (
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-one__card">
+                        <img src={img.url} alt={img.alt}>
+                        <div class="gallery-one__card__hover">
+                            <a href={img.url} class="img-popup">
+                                <div class="gallery-one__card__icon">
+                                    <span class="gallery-one__card__icon__item"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                ))}
+            </div>
+        </div>
+    </section>
+    <Footer />
+
+</BaseLayout>
